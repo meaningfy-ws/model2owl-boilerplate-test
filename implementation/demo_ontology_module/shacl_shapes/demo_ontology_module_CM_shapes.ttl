@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -935,8 +936,13 @@ module-shape:module-shape a owl:Ontology ;
         <https://github.com/eprocurementontology/eprocurementontology>,
         <https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about>,
         <https://op.europa.eu/en/web/eu-vocabularies/e-procurement> ;
-    owl:imports :module,
-        :module-restriction ;
+    owl:imports module-shape:core-shape,
+        :module,
+        :module-restriction,
+        dcterms:,
+        skos:,
+        <http://www.w3.org/ns/adms>,
+        <https://data.europa.eu/m8g> ;
     owl:incompatibleWith "2.1.0" ;
     owl:priorVersion "http://data.europa.eu/a4g/data-shape#module-shape-3.0.1" ;
     owl:versionIRI module-shape:module-shape-3.1.0 ;
