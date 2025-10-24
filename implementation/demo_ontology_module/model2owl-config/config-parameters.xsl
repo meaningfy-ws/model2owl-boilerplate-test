@@ -152,7 +152,7 @@
 
     <xsl:variable name="annotateShaclConceptsWithOntology" select="fn:true()"/>
 
-    <xsl:variable name="moduleReference" select="'core'"/>
+    <xsl:variable name="moduleReference" select="'module'"/>
 
 
 </xsl:stylesheet>
