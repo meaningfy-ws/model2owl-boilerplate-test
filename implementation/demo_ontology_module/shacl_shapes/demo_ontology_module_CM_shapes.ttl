@@ -12,71 +12,71 @@ core-shape:epo-NoticeAwardInformationShape sh:property core-shape:epo-NoticeAwar
         core-shape:epo-NoticeAwardInformation-epo-describesResultNotice .
 
 core-shape:epo-not-CANDefence-D81Shape a sh:NodeShape ;
-    rdfs:label "CAN defence- D81" ;
+    rdfs:label "CAN Defence- D81" ;
     rdfs:comment "What is the notice type here?" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CANDefence-D81 .
 
 core-shape:epo-not-CANSocial-D25Shape a sh:NodeShape ;
-    rdfs:label "CAN social- D25" ;
+    rdfs:label "CAN Social- D25" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CANSocial-D25 .
 
 core-shape:epo-not-CANSocialNotice-D25Shape a sh:NodeShape ;
-    rdfs:label "CAN social notice- D25" ;
+    rdfs:label "CAN Social Notice- D25" ;
     rdfs:comment "Additional information: Social and other specific services – utilities" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CANSocialNotice-D25 .
 
 core-shape:epo-not-CANSocialNoticeShape a sh:NodeShape ;
-    rdfs:label "CAN social notice" ;
+    rdfs:label "CAN Social Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CANSocialNotice .
 
 core-shape:epo-not-CANStandard-D24Shape a sh:NodeShape ;
-    rdfs:label "CAN standard- D24" ;
+    rdfs:label "CAN Standard- D24" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CANStandard-D24 .
 
 core-shape:epo-not-CANStandardNoticeShape a sh:NodeShape ;
-    rdfs:label "CAN standard notice" ;
+    rdfs:label "CAN Standard Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CANStandardNotice .
 
 core-shape:epo-not-CNDefence-D81Shape a sh:NodeShape ;
-    rdfs:label "CN defence- D81" ;
+    rdfs:label "CN Defence- D81" ;
     rdfs:comment "What is the notice type here?" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CNDefence-D81 .
 
 core-shape:epo-not-CNSocial-D25Shape a sh:NodeShape ;
-    rdfs:label "CN social- D25" ;
+    rdfs:label "CN Social- D25" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CNSocial-D25 .
 
 core-shape:epo-not-CNSocialNotice-D25Shape a sh:NodeShape ;
-    rdfs:label "CN social notice- D25" ;
+    rdfs:label "CN Social Notice- D25" ;
     rdfs:comment "Additional information: Social and other specific services – utilities" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CNSocialNotice-D25 .
 
 core-shape:epo-not-CNSocialNoticeShape a sh:NodeShape ;
-    rdfs:label "CN social notice" ;
+    rdfs:label "CN Social Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CNSocialNotice .
 
 core-shape:epo-not-CNStandard-D24Shape a sh:NodeShape ;
-    rdfs:label "CN standard- D24" ;
+    rdfs:label "CN Standard- D24" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CNStandard-D24 .
 
 core-shape:epo-not-CNStandardNoticeShape a sh:NodeShape ;
-    rdfs:label "CN standard notice" ;
+    rdfs:label "CN Standard Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :CNStandardNotice .
 
 core-shape:epo-not-CompetitionNoticeShape a sh:NodeShape ;
-    rdfs:label "Competition notice" ;
+    rdfs:label "Competition Notice" ;
     rdfs:comment "An announcement of the launch of a Procurement Procedure by a Procuring Entity. WG approval 18/05/2018" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:property core-shape:epo-not-CompetitionNotice-epo-announcesLot,
@@ -86,7 +86,7 @@ core-shape:epo-not-CompetitionNoticeShape a sh:NodeShape ;
     sh:targetClass :CompetitionNotice .
 
 core-shape:epo-not-CompletionNoticeShape a sh:NodeShape ;
-    rdfs:label "Completion notice" ;
+    rdfs:label "Completion Notice" ;
     rdfs:comment "An announcement of the end of a Procurement by a Buyer." ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:property core-shape:epo-not-CompletionNotice-epo-announcesCompletionOfContract,
@@ -102,19 +102,19 @@ core-shape:epo-not-CompletionNoticeShape a sh:NodeShape ;
     sh:targetClass :CompletionNotice .
 
 core-shape:epo-not-ConcessionAwardNotice-D23Shape a sh:NodeShape ;
-    rdfs:label "Concession award notice- D23" ;
+    rdfs:label "Concession Award Notice- D23" ;
     rdfs:comment "where does this belong to?" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :ConcessionAwardNotice-D23 .
 
 core-shape:epo-not-ConcessionNotice-D23Shape a sh:NodeShape ;
-    rdfs:label "Concession notice- D23" ;
+    rdfs:label "Concession Notice- D23" ;
     rdfs:comment "where does this belong to?" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :ConcessionNotice-D23 .
 
 core-shape:epo-not-ContractModificationNoticeShape a sh:NodeShape ;
-    rdfs:label "Contract modification notice" ;
+    rdfs:label "Contract Modification Notice" ;
     rdfs:comment "An announcement of the Modification Of a Contract/Concession during its term by a Procuring Entity." ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:property core-shape:epo-not-ContractModificationNotice-epo-announcesContractAmendment,
@@ -129,37 +129,37 @@ core-shape:epo-not-ContractModificationNoticeShape a sh:NodeShape ;
     sh:targetClass :ContractModificationNotice .
 
 core-shape:epo-not-DesignContest-D24Shape a sh:NodeShape ;
-    rdfs:label "Design contest- D24" ;
+    rdfs:label "Design Contest- D24" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :DesignContest-D24 .
 
 core-shape:epo-not-DesignContest-D25Shape a sh:NodeShape ;
-    rdfs:label "Design contest- D25" ;
+    rdfs:label "Design Contest- D25" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :DesignContest-D25 .
 
 core-shape:epo-not-DesignContestNoticeShape a sh:NodeShape ;
-    rdfs:label "Design contest notice" ;
+    rdfs:label "Design Contest Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :DesignContestNotice .
 
 core-shape:epo-not-DesignContestResult-D24Shape a sh:NodeShape ;
-    rdfs:label "Design contest result- D24" ;
+    rdfs:label "Design Contest Result- D24" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :DesignContestResult-D24 .
 
 core-shape:epo-not-DesignContestResult-D25Shape a sh:NodeShape ;
-    rdfs:label "Design contest result- D25" ;
+    rdfs:label "Design Contest Result- D25" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :DesignContestResult-D25 .
 
 core-shape:epo-not-DesignContestResultNoticeShape a sh:NodeShape ;
-    rdfs:label "Design contest result notice" ;
+    rdfs:label "Design Contest Result Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :DesignContestResultNotice .
 
 core-shape:epo-not-DirectAwardPrenotificationNoticeShape a sh:NodeShape ;
-    rdfs:label "Direct award prenotification notice" ;
+    rdfs:label "Direct Award Prenotification Notice" ;
     rdfs:comment "Notice which sets out the Buyer's purchasing intention to award a Contract without prior notification of Competition." ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:property core-shape:epo-not-DirectAwardPrenotificationNotice-epo-announcesAwardDecision,
@@ -388,28 +388,28 @@ core-shape:epo-not-Notice9Shape a sh:NodeShape ;
     sh:targetClass :Notice9 .
 
 core-shape:epo-not-PIN-CFCSocial-D25Shape a sh:NodeShape ;
-    rdfs:label "PI N- CFC social- D25" ;
+    rdfs:label "PI N- CFC Social- D25" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PIN-CFCSocial-D25 .
 
 core-shape:epo-not-PIN-CFCSocialNotice-D25Shape a sh:NodeShape ;
-    rdfs:label "PI N- CFC social notice- D25" ;
+    rdfs:label "PI N- CFC Social Notice- D25" ;
     rdfs:comment "Additional information: Social and other specific services – utilities" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PIN-CFCSocialNotice-D25 .
 
 core-shape:epo-not-PIN-CFCSocialNoticeShape a sh:NodeShape ;
-    rdfs:label "PI N- CFC social notice" ;
+    rdfs:label "PI N- CFC Social Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PIN-CFCSocialNotice .
 
 core-shape:epo-not-PIN-CFCStandard-D24Shape a sh:NodeShape ;
-    rdfs:label "PI N- CFC standard- D24" ;
+    rdfs:label "PI N- CFC Standard- D24" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PIN-CFCStandard-D24 .
 
 core-shape:epo-not-PIN-CFCStandardNoticeShape a sh:NodeShape ;
-    rdfs:label "PI N- CFC standard notice" ;
+    rdfs:label "PI N- CFC Standard Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PIN-CFCStandardNotice .
 
@@ -424,54 +424,54 @@ core-shape:epo-not-PIN-RTL-D25Shape a sh:NodeShape ;
     sh:targetClass :PIN-RTL-D25 .
 
 core-shape:epo-not-PINDefence-D81Shape a sh:NodeShape ;
-    rdfs:label "PIN defence- D81" ;
+    rdfs:label "PIN Defence- D81" ;
     rdfs:comment "What is the notice type here?" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINDefence-D81 .
 
 core-shape:epo-not-PINOnly-D24Shape a sh:NodeShape ;
-    rdfs:label "PIN only- D24" ;
+    rdfs:label "PIN Only- D24" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINOnly-D24 .
 
 core-shape:epo-not-PINOnly-D25Shape a sh:NodeShape ;
-    rdfs:label "PIN only- D25" ;
+    rdfs:label "PIN Only- D25" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINOnly-D25 .
 
 core-shape:epo-not-PINOnlyNoticeShape a sh:NodeShape ;
-    rdfs:label "PIN only notice" ;
+    rdfs:label "PIN Only Notice" ;
     rdfs:comment "PriorInformationNotice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINOnlyNotice .
 
 core-shape:epo-not-PINProfile-D24Shape a sh:NodeShape ;
-    rdfs:label "PIN profile- D24" ;
+    rdfs:label "PIN Profile- D24" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINProfile-D24 .
 
 core-shape:epo-not-PINProfile-D25Shape a sh:NodeShape ;
-    rdfs:label "PIN profile- D25" ;
+    rdfs:label "PIN Profile- D25" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINProfile-D25 .
 
 core-shape:epo-not-PINProfile-D81Shape a sh:NodeShape ;
-    rdfs:label "PIN profile- D81" ;
+    rdfs:label "PIN Profile- D81" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINProfile-D81 .
 
 core-shape:epo-not-PINProfileNoticeShape a sh:NodeShape ;
-    rdfs:label "PIN profile notice" ;
+    rdfs:label "PIN Profile Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINProfileNotice .
 
 core-shape:epo-not-PINTimeLimitNoticeShape a sh:NodeShape ;
-    rdfs:label "PIN time limit notice" ;
+    rdfs:label "PIN Time Limit Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PINTimeLimitNotice .
 
 core-shape:epo-not-PlanningNoticeShape a sh:NodeShape ;
-    rdfs:label "Planning notice" ;
+    rdfs:label "Planning Notice" ;
     rdfs:comment "Notice which sets out the Contracting Authority's purchasing intentions. It is used by Contracting Authorities to provide Suppliers with information about a Procurement Process.",
         "When backwards compatibility to StandardForms is no longer required, switch to establishing the notice type constraint at this level." ;
     rdfs:isDefinedBy core-shape:core-shape ;
@@ -480,7 +480,7 @@ core-shape:epo-not-PlanningNoticeShape a sh:NodeShape ;
     sh:targetClass :PlanningNotice .
 
 core-shape:epo-not-PreMarketConsultationNoticeShape a sh:NodeShape ;
-    rdfs:label "Pre market consultation notice" ;
+    rdfs:label "Pre Market Consultation Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :PreMarketConsultationNotice .
 
@@ -490,18 +490,18 @@ core-shape:epo-not-QS-D25Shape a sh:NodeShape ;
     sh:targetClass :QS-D25 .
 
 core-shape:epo-not-QSNotice-D25Shape a sh:NodeShape ;
-    rdfs:label "QS notice- D25" ;
+    rdfs:label "QS Notice- D25" ;
     rdfs:comment "Additional information: Social and other specific services – utilities" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :QSNotice-D25 .
 
 core-shape:epo-not-QSNoticeShape a sh:NodeShape ;
-    rdfs:label "QS notice" ;
+    rdfs:label "QS Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :QSNotice .
 
 core-shape:epo-not-ResultNoticeShape a sh:NodeShape ;
-    rdfs:label "Result notice" ;
+    rdfs:label "Result Notice" ;
     rdfs:comment "An announcement of the award or non-award of a Contract by a Buyer. (WG approval 27/03/2019)" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:property core-shape:epo-not-ResultNotice-epo-announcesAwardDecision,
@@ -516,20 +516,20 @@ core-shape:epo-not-ResultNoticeShape a sh:NodeShape ;
     sh:targetClass :ResultNotice .
 
 core-shape:epo-not-SocialAndOtherSpecificServices-D23Shape a sh:NodeShape ;
-    rdfs:label "Social and other specific services- D23" ;
+    rdfs:label "Social And Other Specific Services- D23" ;
     rdfs:comment "This can be PIN or Concession award notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :SocialAndOtherSpecificServices-D23 .
 
 core-shape:epo-not-SocialAndOtherSpecificServices-D24Shape a sh:NodeShape ;
-    rdfs:label "Social and other specific services- D24" ;
+    rdfs:label "Social And Other Specific Services- D24" ;
     rdfs:comment "This can be PIN (maybe CFC), CN or CAN.",
         "public contracts" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :SocialAndOtherSpecificServices-D24 .
 
 core-shape:epo-not-StandardFormsNoticeShape a sh:NodeShape ;
-    rdfs:label "Standard forms notice" ;
+    rdfs:label "Standard Forms Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :StandardFormsNotice .
 
@@ -539,7 +539,7 @@ core-shape:epo-not-Subcontract-D81Shape a sh:NodeShape ;
     sh:targetClass :Subcontract-D81 .
 
 core-shape:epo-not-SubcontractNoticeShape a sh:NodeShape ;
-    rdfs:label "Subcontract notice" ;
+    rdfs:label "Subcontract Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :SubcontractNotice .
 
@@ -564,13 +564,13 @@ core-shape:epo-not-VEAT-D81Shape a sh:NodeShape ;
     sh:targetClass :VEAT-D81 .
 
 core-shape:epo-not-VoluntaryEx-AnteTransparencyNoticeShape a sh:NodeShape ;
-    rdfs:label "Voluntary ex- ante transparency notice" ;
+    rdfs:label "Voluntary Ex- Ante Transparency Notice" ;
     rdfs:comment "A Notice informing of the intention to award a Contract without prior publication of a Contract Notice. Additional Information: For European Notices above the threshold \"A means of advertising the intention to award the Contract without opening it up to formal Competition. A Contracting Authority may decide that a Contract does not require prior publication through a Contract Notice in the O.J.E.U. A reason for this decision may be that the Contract meets the exceptional conditions described in Article 31 of Directive 2004/18/EC. In a recent V.E.A.T notice the reason was listed as “extreme urgency brought about by events unforeseeable by the Contracting Entity and in accordance with the strict conditions stated in the Directive” . \"Voluntary Ex-Ante Transparency Notice\" (VEAT) where a Contracting Authority deems that a Contract does not require prior publication of a Contract Notice in the European Journal (OJEU). This may apply, for example, if the Contract meets the exceptional conditions justifying direct award of contracts. <b>This definition is still to be worked on.</b>" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :VoluntaryEx-AnteTransparencyNotice .
 
 core-shape:epo-not-eFormsNoticeShape a sh:NodeShape ;
-    rdfs:label "E forms notice" ;
+    rdfs:label "e Forms Notice" ;
     rdfs:isDefinedBy core-shape:core-shape ;
     sh:targetClass :eFormsNotice .
 
@@ -931,7 +931,7 @@ core-shape:core-shape a owl:Ontology ;
     dcterms:title "ePO Core shapes"@en ;
     vann:preferredNamespacePrefix "epo" ;
     vann:preferredNamespaceUri "http://data.europa.eu/a4g/ontology#" ;
-    rdfs:comment "This version is automatically generated from demo_ontology_module_CM.xml on 2025-10-14" ;
+    rdfs:comment "This version is automatically generated from demo_ontology_module_CM.xml on 2025-11-14" ;
     rdfs:seeAlso <https://docs.ted.europa.eu/EPO/latest/index.html>,
         <https://github.com/eprocurementontology/eprocurementontology>,
         <https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about>,
