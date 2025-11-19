@@ -94,13 +94,12 @@ Sample:
 <?xml version="1.0" encoding="UTF-8"?>
 <prefixes xmlns="http://publications.europa.eu/ns/">
    <prefix name="" value="http://data.europa.eu/a4g/ontology#"/>
-    <prefix name="foaf" value="http://xmlns.com/foaf/0.1/" importURI="http://xmlns.com/foaf/0.1/"/>
+    <prefix name="foaf" value="http://xmlns.com/foaf/0.1/"/>
    <!-- ... other prefixes ... -->
 </prefixes>
 ```
 **Notes:**
-- If you want any URI from this list to be imported as statements (`owl:imports`) in the generated OWL and SHACL artefacts
-use the `importURI` attribute like in the example above.
+- If you want any URI from this list to be imported as statements (`owl:imports`) in the generated OWL and SHACL artefacts, define it in the imports.xml file (as described in the [Imported ontologies configuration](https://github.com/OP-TED/model2owl/tree/develop?tab=readme-ov-file#imported-ontologies-configuration)).
 
 #### XSD and RDF Datatypes File (xsdAndRdfDataTypes.xml)
 
