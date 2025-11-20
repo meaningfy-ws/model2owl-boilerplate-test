@@ -1,6 +1,7 @@
 {
   "config": {
     "classReferenceRespecLabel": "Reference",
+    "issuedDate": "2025-11-20",
     "mandatoryStatusTagName": "cfg:usage",
     "propertyReferenceRespecLabel": "Reuse",
     "referenceTagName": "dct:references",
