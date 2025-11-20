@@ -8630,9 +8630,9 @@
             }
           ],
           "label": {
-            "en": "Fulfills environmental requirement"
+            "en": "Fulfills requirement"
           },
-          "name": "epo:fulfillsEnvironmentalRequirement",
+          "name": "epo:fulfillsRequirement",
           "range": [
             {
               "range_curie": "skos:Concept",
@@ -8647,7 +8647,7 @@
             "epo:status": "implemented",
             "skos:historyNote": "WG Approval 09/11/2021"
           },
-          "uri": "http://data.europa.eu/a4g/ontology#fulfillsEnvironmentalRequirement",
+          "uri": "http://data.europa.eu/a4g/ontology#fulfillsRequirement",
           "usage": {}
         },
         {
