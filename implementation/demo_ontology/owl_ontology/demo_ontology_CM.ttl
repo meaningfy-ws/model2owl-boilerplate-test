@@ -1252,11 +1252,6 @@
     rdfs:isDefinedBy :core ;
     skos:prefLabel "foresees Term"@en .
 
-:fulfillsEnvironmentalRequirement a owl:ObjectProperty ;
-    rdfs:isDefinedBy :core ;
-    skos:definition "The requirement to which the concept meets."@en ;
-    skos:prefLabel "fulfills Environmental Requirement"@en .
-
 :fulfillsRequirement a owl:ObjectProperty ;
     rdfs:isDefinedBy :core ;
     skos:definition "The requirement to which the concept meets."@en ;
