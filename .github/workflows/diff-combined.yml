@@ -87,6 +87,8 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git pull --rebase origin ${GITHUB_REF#refs/heads/} || echo "No remote changes to pull"
         git add ${RDF_DIFF_OUTDIR}
         git commit -m "chore(ci-auto): add combined RDF diff report (merged OWL+SHACL)" || echo "No changes to commit"
         git push
