@@ -1,0 +1,95 @@
+name: RDF Diff Combined
+
+on:
+  push:
+    paths:
+      - 'diffing-files/**'
+  workflow_dispatch:
+
+jobs:
+  rdf-diff-combined:
+    runs-on: ubuntu-latest
+
+    env:
+      OLD_ONTOLOGY_FILE: ${{ vars.OLD_ONTOLOGY_FILE || 'diffing-files/ePO_core-4.1.0.ttl' }}
+      OLD_SHACL_FILE: ${{ vars.OLD_SHACL_FILE || 'diffing-files/ePO_core_shapes-4.1.0.ttl' }}
+      NEW_ONTOLOGY_FILE: ${{ vars.NEW_ONTOLOGY_FILE || 'diffing-files/ePO_core-4.2.0.ttl' }}
+      NEW_SHACL_FILE: ${{ vars.NEW_SHACL_FILE || 'diffing-files/ePO_core_shapes-4.2.0.ttl' }}
+      RDF_DIFF_OUTDIR: ${{ vars.RDF_DIFF_OUTDIR || 'output-diff-combined' }}
+      RDF_DIFF_AP: ${{ vars.RDF_DIFF_AP || 'owl-core-en-only' }}
+      RDF_DIFF_TEMPLATE: ${{ vars.RDF_DIFF_TEMPLATE || 'asciidoc' }}
+
+    steps:
+    - name: Check out this repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Required for committing back
+
+    - name: Clone model2owl repository (feature/M2O3-54 branch)
+      run: |
+        git clone --branch feature/M2O3-54 https://github.com/OP-TED/model2owl.git
+        echo "model2owl/" >> .gitignore
+        echo "✅ Added model2owl/ to .gitignore"
+
+    - name: Install dependencies
+      run: |
+        cd model2owl
+        make install
+
+    - name: Merge OWL and SHACL for old version
+      run: |
+        echo "Merging ${OLD_ONTOLOGY_FILE} with ${OLD_SHACL_FILE}..."
+        OLD_BASENAME=$(basename "${OLD_ONTOLOGY_FILE}" .ttl)
+        MERGE_OUTPUT_FILE1="${OLD_BASENAME}_combined.ttl"
+        cd model2owl
+        make merge-owl-shacl \
+          MERGE_ONTOLOGY_FILE=../${OLD_ONTOLOGY_FILE} \
+          MERGE_SHAPES_FILE=../${OLD_SHACL_FILE} \
+          MERGE_OUTPUT_FILE=../${MERGE_OUTPUT_FILE1}
+        echo "✅ Merged file created: ${MERGE_OUTPUT_FILE1}"
+        echo "MERGE_OUTPUT_FILE1=${MERGE_OUTPUT_FILE1}" >> $GITHUB_ENV
+
+    - name: Merge OWL and SHACL for new version
+      run: |
+        echo "Merging ${NEW_ONTOLOGY_FILE} with ${NEW_SHACL_FILE}..."
+        NEW_BASENAME=$(basename "${NEW_ONTOLOGY_FILE}" .ttl)
+        MERGE_OUTPUT_FILE2="${NEW_BASENAME}_combined.ttl"
+        cd model2owl
+        make merge-owl-shacl \
+          MERGE_ONTOLOGY_FILE=../${NEW_ONTOLOGY_FILE} \
+          MERGE_SHAPES_FILE=../${NEW_SHACL_FILE} \
+          MERGE_OUTPUT_FILE=../${MERGE_OUTPUT_FILE2}
+        echo "✅ Merged file created: ${MERGE_OUTPUT_FILE2}"
+        echo "MERGE_OUTPUT_FILE2=${MERGE_OUTPUT_FILE2}" >> $GITHUB_ENV
+
+    - name: Perform full RDF diff on merged files
+      run: |
+        echo "OLD_ONTOLOGY_FILE: ${OLD_ONTOLOGY_FILE}"
+        echo "NEW_ONTOLOGY_FILE: ${NEW_ONTOLOGY_FILE}"
+        echo "Merged FILE1: ${MERGE_OUTPUT_FILE1}"
+        echo "Merged FILE2: ${MERGE_OUTPUT_FILE2}"
+        echo "OUTDIR: ${RDF_DIFF_OUTDIR}"
+        echo "AP: ${RDF_DIFF_AP}"
+        echo "TEMPLATE: ${RDF_DIFF_TEMPLATE}"
+
+        cd model2owl
+        make run-rdf-diff \
+          RDF_DIFF_FILE1=../${MERGE_OUTPUT_FILE1} \
+          RDF_DIFF_FILE2=../${MERGE_OUTPUT_FILE2} \
+          RDF_DIFF_OUTDIR=../${RDF_DIFF_OUTDIR} \
+          RDF_DIFF_AP=${RDF_DIFF_AP} \
+          RDF_DIFF_TEMPLATE=${RDF_DIFF_TEMPLATE}
+      env:
+        MERGE_OUTPUT_FILE1: ${{ env.MERGE_OUTPUT_FILE1 }}
+        MERGE_OUTPUT_FILE2: ${{ env.MERGE_OUTPUT_FILE2 }}
+
+    - name: Commit and push diff result
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add ${RDF_DIFF_OUTDIR}
+        git commit -m "chore(ci-auto): add combined RDF diff report (merged OWL+SHACL)" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

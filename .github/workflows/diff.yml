@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      RDF_DIFF_FILE1: ${{ vars.RDF_DIFF_FILE1 || 'diffing-files/ePO_core-4.1.0.ttl' }}
-      RDF_DIFF_FILE2: ${{ vars.RDF_DIFF_FILE2 || 'diffing-files/ePO_core-4.2.0.ttl' }}
-      RDF_DIFF_OUTDIR: ${{ vars.RDF_DIFF_OUTDIR || 'output' }}
+      OLD_ONTOLOGY_FILE: ${{ vars.OLD_ONTOLOGY_FILE || 'diffing-files/ePO_core-4.1.0.ttl' }}
+      NEW_ONTOLOGY_FILE: ${{ vars.NEW_ONTOLOGY_FILE || 'diffing-files/ePO_core-4.2.0.ttl' }}
+      RDF_DIFF_OUTDIR: ${{ vars.RDF_DIFF_OUTDIR || 'output-diff' }}
       RDF_DIFF_AP: ${{ vars.RDF_DIFF_AP || 'owl-core-en-only' }}
-      RDF_DIFF_TEMPLATE: ${{ vars.RDF_DIFF_TEMPLATE || 'html' }}
+      RDF_DIFF_TEMPLATE: ${{ vars.RDF_DIFF_TEMPLATE || 'asciidoc' }}
 
     steps:
     - name: Check out this repository
@@ -36,16 +36,16 @@ jobs:
 
     - name: Perform full RDF diff and report workflow
       run: |
-        echo "FILE1: ${RDF_DIFF_FILE1}"
-        echo "FILE2: ${RDF_DIFF_FILE2}"
+        echo "OLD_ONTOLOGY_FILE: ${OLD_ONTOLOGY_FILE}"
+        echo "NEW_ONTOLOGY_FILE: ${NEW_ONTOLOGY_FILE}"
         echo "OUTDIR: ${RDF_DIFF_OUTDIR}"
         echo "AP: ${RDF_DIFF_AP}"
         echo "TEMPLATE: ${RDF_DIFF_TEMPLATE}"
 
         cd model2owl
         make run-rdf-diff \
-          RDF_DIFF_FILE1=../${RDF_DIFF_FILE1} \
-          RDF_DIFF_FILE2=../${RDF_DIFF_FILE2} \
+          RDF_DIFF_FILE1=../${OLD_ONTOLOGY_FILE} \
+          RDF_DIFF_FILE2=../${NEW_ONTOLOGY_FILE} \
           RDF_DIFF_OUTDIR=../${RDF_DIFF_OUTDIR} \
           RDF_DIFF_AP=${RDF_DIFF_AP} \
           RDF_DIFF_TEMPLATE=${RDF_DIFF_TEMPLATE}

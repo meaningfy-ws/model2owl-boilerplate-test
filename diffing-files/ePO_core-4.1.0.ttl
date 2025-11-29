@@ -24,6 +24,7 @@
 @prefix atold: <http://publications.europa.eu/resource/authority/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 
+
 a4g:AccessTerm a owl:Class ;
 	rdfs:isDefinedBy a4g:core ;
 	rdfs:subClassOf a4g:LotSpecificTerm, a4g:ProcedureSpecificTerm ;
