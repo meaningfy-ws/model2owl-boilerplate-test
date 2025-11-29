@@ -1,0 +1,61 @@
+name: RDF Diff
+
+on:
+  push:
+    paths:
+      - 'diffing-files/**'
+  workflow_dispatch:
+
+jobs:
+  rdf-diff:
+    runs-on: ubuntu-latest
+
+    env:
+      RDF_DIFF_FILE1: ${{ vars.RDF_DIFF_FILE1 || 'diffing-files/ePO_core-4.1.0.ttl' }}
+      RDF_DIFF_FILE2: ${{ vars.RDF_DIFF_FILE2 || 'diffing-files/ePO_core-4.2.0.ttl' }}
+      RDF_DIFF_OUTDIR: ${{ vars.RDF_DIFF_OUTDIR || 'output' }}
+      RDF_DIFF_AP: ${{ vars.RDF_DIFF_AP || 'owl-core-en-only' }}
+      RDF_DIFF_TEMPLATE: ${{ vars.RDF_DIFF_TEMPLATE || 'html' }}
+
+    steps:
+    - name: Check out this repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Required for committing back
+
+    - name: Clone model2owl repository (feature/M2O3-54 branch)
+      run: |
+        git clone --branch feature/M2O3-54 https://github.com/OP-TED/model2owl.git
+        echo "model2owl/" >> .gitignore
+        echo "✅ Added model2owl/ to .gitignore"
+
+    - name: Install dependencies
+      run: |
+        cd model2owl
+        make install
+
+    - name: Perform full RDF diff and report workflow
+      run: |
+        echo "FILE1: ${RDF_DIFF_FILE1}"
+        echo "FILE2: ${RDF_DIFF_FILE2}"
+        echo "OUTDIR: ${RDF_DIFF_OUTDIR}"
+        echo "AP: ${RDF_DIFF_AP}"
+        echo "TEMPLATE: ${RDF_DIFF_TEMPLATE}"
+
+        cd model2owl
+        make run-rdf-diff \
+          RDF_DIFF_FILE1=../${RDF_DIFF_FILE1} \
+          RDF_DIFF_FILE2=../${RDF_DIFF_FILE2} \
+          RDF_DIFF_OUTDIR=../${RDF_DIFF_OUTDIR} \
+          RDF_DIFF_AP=${RDF_DIFF_AP} \
+          RDF_DIFF_TEMPLATE=${RDF_DIFF_TEMPLATE}
+
+    - name: Commit and push diff result
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add ${RDF_DIFF_OUTDIR}
+        git commit -m "chore(ci-auto): add RDF diff report for latest updates" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
