@@ -50,6 +50,31 @@ jobs:
           RDF_DIFF_AP=${RDF_DIFF_AP} \
           RDF_DIFF_TEMPLATE=${RDF_DIFF_TEMPLATE}
 
+    - name: Install AsciiDoctor
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y asciidoctor
+
+    - name: Convert AsciiDoc to HTML
+      run: |
+        if [ -f "${RDF_DIFF_OUTDIR}/diff.asciidoc" ]; then
+          echo "Converting ${RDF_DIFF_OUTDIR}/diff.asciidoc to HTML..."
+          asciidoctor \
+            --attribute stylesheet=github \
+            --attribute source-highlighter=rouge \
+            --attribute toc=left \
+            --attribute toclevels=3 \
+            --attribute sectlinks \
+            --attribute sectanchors \
+            --attribute icons=font \
+            --out-file "${RDF_DIFF_OUTDIR}/diff.html" \
+            "${RDF_DIFF_OUTDIR}/diff.asciidoc"
+          echo "✅ Generated ${RDF_DIFF_OUTDIR}/diff.html"
+        else
+          echo "❌ No diff.asciidoc file found in ${RDF_DIFF_OUTDIR}/"
+          ls -la "${RDF_DIFF_OUTDIR}/" || echo "Output directory does not exist"
+        fi
+
     - name: Commit and push diff result
       run: |
         git config user.name "github-actions[bot]"
