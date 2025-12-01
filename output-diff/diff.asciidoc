@@ -3,12 +3,12 @@
 
 
 
-This report is automatically generated from the diffus4fiq9h83 RDF dataset on 29-Nov-2025T20:49:56
+This report is automatically generated from the diffusi5VzxFyB RDF dataset on 01-Dec-2025T14:02:40
 and aims at presenting the difference between two versions of an RDFS/OWL vocabulary following the owl-core-en-only application profile.
 
 == Report details
 
-*Dataset ID:* diffus4fiq9h83
+*Dataset ID:* diffusi5VzxFyB
 
 *Dataset name:* diffus
 
@@ -16,7 +16,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
 
 *New version file:* ePO_core-4.2.0.ttl
 
-*Time:* 29-Nov-2025T20:49:56
+*Time:* 01-Dec-2025T14:02:40
 
 *Application profile:* owl-core-en-only
 
