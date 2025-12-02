@@ -115,6 +115,30 @@ jobs:
           sudo rm -rf model2owl
         shell: bash
 
+      - name: Install AsciiDoctor
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y asciidoctor
+
+      - name: Convert AsciiDoc to HTML
+        run: |
+          ADOC_GLOSSARY_PATHS=$(find "${$OUTPUT_GLOSSARY_PATH}" -maxdepth 1 -name '*_glossary.adoc')
+          for src in "${ADOC_GLOSSARY_PATHS[@]}"
+          do
+              echo "Converting ${src} to HTML..."
+              asciidoctor \
+                --attribute stylesheet=github \
+                --attribute source-highlighter=rouge \
+                --attribute toc=left \
+                --attribute toclevels=3 \
+                --attribute sectlinks \
+                --attribute sectanchors \
+                --attribute icons=font \
+                --out-file "${src}.html" \
+                "${src}"
+              echo "Generated ${src}.html"
+          done
+
       - name: commit files
         id: commit
         run: |
