@@ -127,7 +127,6 @@ jobs:
           do
               echo "Converting ${src} to HTML..."
               asciidoctor \
-                --attribute stylesheet=github \
                 --attribute source-highlighter=rouge \
                 --attribute toc=left \
                 --attribute toclevels=3 \
