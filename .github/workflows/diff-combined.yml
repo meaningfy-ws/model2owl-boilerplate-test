@@ -2,8 +2,8 @@ name: RDF Diff Combined
 
 on:
   push:
-    # paths:
-    #   - 'diffing-files/**'
+    paths:
+      - 'diffing-files/**'
   workflow_dispatch:
 
 jobs:
