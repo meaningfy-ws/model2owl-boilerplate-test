@@ -1,9 +1,6 @@
 name: RDF Diff
 
 on:
-  push:
-    paths:
-      - 'diffing-files/**'
   workflow_dispatch:
 
 jobs:
