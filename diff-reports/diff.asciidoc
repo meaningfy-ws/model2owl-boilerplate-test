@@ -3,12 +3,12 @@
 
 
 
-This report is automatically generated from the diffusXMtammPT RDF dataset on 07-Dec-2025T19:36:53
+This report is automatically generated from the diffuscdJAMzDY RDF dataset on 08-Dec-2025T10:24:33
 and aims at presenting the difference between two versions of an RDFS/OWL vocabulary following the owl-core-en-only application profile.
 
 == Report details
 
-*Dataset ID:* diffusXMtammPT
+*Dataset ID:* diffuscdJAMzDY
 
 *Dataset name:* diffus
 
@@ -16,7 +16,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
 
 *New version file:* demo_ontology_CM_combined.ttl
 
-*Time:* 07-Dec-2025T19:36:53
+*Time:* 08-Dec-2025T10:24:33
 
 *Application profile:* owl-core-en-only
 
