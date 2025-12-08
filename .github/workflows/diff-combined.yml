@@ -92,9 +92,9 @@ jobs:
           echo "OLD_SHACL_PATH=${OLD_SHACL_FILE}" >> $GITHUB_ENV
         fi
 
-    - name: Clone model2owl repository (feature/M2O3-54 branch)
+    - name: Clone model2owl repository (develop branch)
       run: |
-        git clone --branch feature/M2O3-54 https://github.com/OP-TED/model2owl.git
+        git clone --branch develop https://github.com/OP-TED/model2owl.git
         echo "model2owl/" >> .gitignore
         echo "✅ Added model2owl/ to .gitignore"
 
