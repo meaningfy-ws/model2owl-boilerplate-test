@@ -2,9 +2,9 @@ name: RDF Diff Combined
 
 on:
   push:
-    paths:
-      - 'implementation/demo_ontology/owl_ontology/demo_ontology_CM.ttl'
-      - 'implementation/demo_ontology/shacl_shapes/demo_ontology_CM_shapes.ttl'
+    # paths:
+    #   - 'implementation/demo_ontology/owl_ontology/demo_ontology_CM.ttl'
+    #   - 'implementation/demo_ontology/shacl_shapes/demo_ontology_CM_shapes.ttl'
   workflow_dispatch:
 
 jobs:
