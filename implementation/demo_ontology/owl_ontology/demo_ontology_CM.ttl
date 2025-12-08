@@ -16,7 +16,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-
 :AccessTerm a owl:Class ;
     rdfs:isDefinedBy :core ;
     rdfs:subClassOf :Term ;

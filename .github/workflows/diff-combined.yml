@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'implementation/demo_ontology/owl_ontology/demo_ontology_CM.ttl'
+      - 'implementation/demo_ontology/shacl_shapes/demo_ontology_CM_shapes.ttl'
   workflow_dispatch:
 
 jobs:
@@ -199,7 +200,29 @@ jobs:
         git fetch origin ${GITHUB_REF#refs/heads/}
         git pull --rebase --autostash origin ${GITHUB_REF#refs/heads/} || echo "No remote changes to pull"
         git add ${RDF_DIFF_OUTDIR}
-        COMMIT_MSG="chore(ci-auto): add RDF diff reports"
+
+        # Generate detailed commit message based on the comparison case
+        if [ -n "${REVISION_TO_COMPARE_COMMIT_ID}" ] && [ -n "${REVISION_TO_COMPARE_REPO_URL}" ]; then
+          # Case 1: External repository comparison
+          REPO_NAME=$(basename "${REVISION_TO_COMPARE_REPO_URL}" .git)
+          OLD_ONT_NAME=$(basename "${OLD_ONTOLOGY_FILE}")
+          OLD_SHACL_NAME=$(basename "${OLD_SHACL_FILE}")
+          NEW_ONT_NAME=$(basename "${NEW_ONTOLOGY_FILE}")
+          NEW_SHACL_NAME=$(basename "${NEW_SHACL_FILE}")
+          COMMIT_MSG="chore(ci-auto): add RDF diff reports (${REPO_NAME}@${REVISION_TO_COMPARE_COMMIT_ID}: ${OLD_ONT_NAME}+${OLD_SHACL_NAME} vs current: ${NEW_ONT_NAME}+${NEW_SHACL_NAME})"
+        elif [ -n "${REVISION_TO_COMPARE_COMMIT_ID}" ]; then
+          # Case 2: Current repository historical comparison
+          OLD_ONT_NAME=$(basename "${OLD_ONTOLOGY_FILE}")
+          OLD_SHACL_NAME=$(basename "${OLD_SHACL_FILE}")
+          NEW_ONT_NAME=$(basename "${NEW_ONTOLOGY_FILE}")
+          NEW_SHACL_NAME=$(basename "${NEW_SHACL_FILE}")
+          COMMIT_MSG="chore(ci-auto): add RDF diff reports (${REVISION_TO_COMPARE_COMMIT_ID}: ${OLD_ONT_NAME}+${OLD_SHACL_NAME} vs current: ${NEW_ONT_NAME}+${NEW_SHACL_NAME})"
+        else
+          # Case 3: Current files comparison
+          NEW_ONT_NAME=$(basename "${NEW_ONTOLOGY_FILE}")
+          NEW_SHACL_NAME=$(basename "${NEW_SHACL_FILE}")
+          COMMIT_MSG="chore(ci-auto): add RDF diff reports (${NEW_ONT_NAME}+${NEW_SHACL_NAME} vs ${NEW_ONT_NAME}+${NEW_SHACL_NAME})"
+        fi
         git commit -m "${COMMIT_MSG}" || echo "No changes to commit"
         git push
       env:
