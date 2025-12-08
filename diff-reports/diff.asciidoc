@@ -3,12 +3,20 @@
 
 
 
+<<<<<<< Updated upstream
 This report is automatically generated from the diffusbCP8hX5Q RDF dataset on 08-Dec-2025T21:39:18
+=======
+This report is automatically generated from the diffusfjAWQNeM RDF dataset on 08-Dec-2025T22:15:06
+>>>>>>> Stashed changes
 and aims at presenting the difference between two versions of an RDFS/OWL vocabulary following the owl-core-en-only application profile.
 
 == Report details
 
+<<<<<<< Updated upstream
 *Dataset ID:* diffusbCP8hX5Q
+=======
+*Dataset ID:* diffusfjAWQNeM
+>>>>>>> Stashed changes
 
 *Dataset name:* diffus
 
@@ -16,7 +24,11 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
 
 *New version file:* demo_ontology_CM_combined.ttl
 
+<<<<<<< Updated upstream
 *Time:* 08-Dec-2025T21:39:18
+=======
+*Time:* 08-Dec-2025T22:15:06
+>>>>>>> Stashed changes
 
 *Application profile:* owl-core-en-only
 
