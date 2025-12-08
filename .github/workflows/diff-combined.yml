@@ -199,15 +199,7 @@ jobs:
         git fetch origin ${GITHUB_REF#refs/heads/}
         git pull --rebase --autostash origin ${GITHUB_REF#refs/heads/} || echo "No remote changes to pull"
         git add ${RDF_DIFF_OUTDIR}
-        # Generate appropriate commit message based on the case
-        if [ -n "${REVISION_TO_COMPARE_COMMIT_ID}" ] && [ -n "${REVISION_TO_COMPARE_REPO_URL}" ]; then
-          REPO_NAME=$(basename "${REVISION_TO_COMPARE_REPO_URL}" .git)
-          COMMIT_MSG="chore(ci-auto): add RDF diff reports (${REPO_NAME}@${REVISION_TO_COMPARE_COMMIT_ID} vs current)"
-        elif [ -n "${REVISION_TO_COMPARE_COMMIT_ID}" ]; then
-          COMMIT_MSG="chore(ci-auto): add RDF diff reports (${REVISION_TO_COMPARE_COMMIT_ID} vs current)"
-        else
-          COMMIT_MSG="chore(ci-auto): add RDF diff reports (current vs current)"
-        fi
+        COMMIT_MSG="chore(ci-auto): add RDF diff reports"
         git commit -m "${COMMIT_MSG}" || echo "No changes to commit"
         git push
       env:
