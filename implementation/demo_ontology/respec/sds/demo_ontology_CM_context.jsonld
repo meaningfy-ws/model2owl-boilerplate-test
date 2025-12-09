@@ -3001,6 +3001,11 @@
           "@id": "http://www.w3.org/ns/adms#identifier",
           "@type": "@id"
         },
+        "ownsSystem": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/a4g/ontology#ownsSystem",
+          "@type": "@id"
+        },
         "title": {
           "@container": "@set",
           "@id": "http://purl.org/dc/terms/title",
@@ -3208,6 +3213,11 @@
         "hasNationality": {
           "@container": "@set",
           "@id": "http://data.europa.eu/a4g/ontology#hasNationality",
+          "@type": "@id"
+        },
+        "isBeneficialOwnerOf": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/a4g/ontology#isBeneficialOwnerOf",
           "@type": "@id"
         },
         "name": {
