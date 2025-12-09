@@ -1020,7 +1020,7 @@
             {
               "range_curie": "foaf:Agent",
               "range_label": {
-                "en": "Agent"
+                "en": "Pref label for agent"
               },
               "range_puri": "http://xmlns.com/foaf/0.1/Agent",
               "range_uri": "http://xmlns.com/foaf/0.1/Agent"
@@ -8630,9 +8630,9 @@
             }
           ],
           "label": {
-            "en": "Fulfills environmental requirement"
+            "en": "Fulfills requirement"
           },
-          "name": "epo:fulfillsEnvironmentalRequirement",
+          "name": "epo:fulfillsRequirement",
           "range": [
             {
               "range_curie": "skos:Concept",
@@ -8647,7 +8647,7 @@
             "epo:status": "implemented",
             "skos:historyNote": "WG Approval 09/11/2021"
           },
-          "uri": "http://data.europa.eu/a4g/ontology#fulfillsEnvironmentalRequirement",
+          "uri": "http://data.europa.eu/a4g/ontology#fulfillsRequirement",
           "usage": {}
         },
         {
@@ -14201,7 +14201,7 @@
             {
               "range_curie": "epo:ProcurementObject",
               "range_label": {
-                "en": "Procurement object"
+                "en": "Procurement object (custom label)"
               },
               "range_puri": "http://data.europa.eu/a4g/ontology#ProcurementObject",
               "range_uri": "http://data.europa.eu/a4g/ontology#ProcurementObject"
@@ -22078,7 +22078,7 @@
             {
               "range_curie": "foaf:Agent",
               "range_label": {
-                "en": "Agent"
+                "en": "Pref label for agent"
               },
               "range_puri": "http://xmlns.com/foaf/0.1/Agent",
               "range_uri": "http://xmlns.com/foaf/0.1/Agent"

@@ -929,11 +929,6 @@
     },
     "GreenProcurement": {
       "@context": {
-        "fulfillsEnvironmentalRequirement": {
-          "@container": "@set",
-          "@id": "http://data.europa.eu/a4g/ontology#fulfillsEnvironmentalRequirement",
-          "@type": "@id"
-        },
         "fulfillsRequirement": {
           "@container": "@set",
           "@id": "http://data.europa.eu/a4g/ontology#fulfillsRequirement",

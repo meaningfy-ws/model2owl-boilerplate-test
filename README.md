@@ -94,13 +94,12 @@ Sample:
 <?xml version="1.0" encoding="UTF-8"?>
 <prefixes xmlns="http://publications.europa.eu/ns/">
    <prefix name="" value="http://data.europa.eu/a4g/ontology#"/>
-    <prefix name="foaf" value="http://xmlns.com/foaf/0.1/" importURI="http://xmlns.com/foaf/0.1/"/>
+    <prefix name="foaf" value="http://xmlns.com/foaf/0.1/"/>
    <!-- ... other prefixes ... -->
 </prefixes>
 ```
 **Notes:**
-- If you want any URI from this list to be imported as statements (`owl:imports`) in the generated OWL and SHACL artefacts
-use the `importURI` attribute like in the example above.
+- If you want any URI from this list to be imported as statements (`owl:imports`) in the generated OWL and SHACL artefacts, define it in the imports.xml file (as described in the [Imported ontologies configuration](https://github.com/OP-TED/model2owl/tree/develop?tab=readme-ov-file#imported-ontologies-configuration)).
 
 #### XSD and RDF Datatypes File (xsdAndRdfDataTypes.xml)
 
@@ -314,7 +313,7 @@ The foundation template that provides:
 - Standard macros and functions
 
 > **Note:** The `base.j2` template is provided by Model2OWL and contains the core functionality. 
-> For detailed information about available variables and macros, see the [Model2OWL ReSpec Documentation](https://docs.ted.europa.eu/M2O/latest/user-guide/respec-documentation.html) and the [Model2OWL README](https://github.com/OP-TED/model2owl/blob/develop/README.md).
+> For detailed information about available variables and macros, see the [Model2OWL ReSpec Documentation](https://docs.ted.europa.eu/M2O/latest/user-guide/respec-documentation.html) and the [Model2OWL README](https://github.com/OP-TED/model2owl/blob/3.1.0-rc.1/README.md).
 
 #### Main Template (`main.j2`)
 Your customizable template that **extends** `base.j2`:
