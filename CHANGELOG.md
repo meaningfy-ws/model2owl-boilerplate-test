@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
+### Added
+
+### Changed
+
+
+## [3.2.0-rc.1] - 2025-12-09
+### Added
+- Add automated workflow for generation of RDF diff reports (TEDM2O-12).
+- Enable generation of a new AsciiDoc glossary (TEDM2O-13).
+### Changed
+- Update project to use [model2owl
+3.2.0](https://github.com/OP-TED/model2owl/releases/tag/3.2.0).
+
 
 ## [3.1.0-rc.2] - 2025-11-20
 ### Changed
