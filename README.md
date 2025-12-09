@@ -241,11 +241,21 @@ be processed by GitHub action scripts
     glossary
         |__static  -> folder to hold css and js neccesary for the glossary
         |__modelOne_CM_glossary.html
+        |__modelOne_CM_glossary.adoc
+        |__modelOne_CM_glossary.adoc.html*
         |__modelTwo_CM_glossary.html
-        |__ontologies_combined_glossary.html   -> combined glossary
+        |__modelTwo_CM_glossary.adoc
+        |__modelTwo_CM_glossary.adoc.html*
+        |__ontologies_combined_glossary.html        -> combined glossary
+        |__ontologies_combined_glossary.adoc        -> combined glossary
+        |__ontologies_combined_glossary.adoc.html*   -> combined glossary
     implementation
     model2owl-config
 ```
+Note: The `*.html` files relate to the former glossary, while the `*.adoc` and `*.adoc.html` files represent the new glossary. The new version overlaps significantly with the old one but includes minor enhancements, such as deduplicated term definitions in the _definition_ columns.
+
+_* The `*.adoc.html` file is different from `*.html` as it's generated from `*.adoc` sources for demonstration purposes only._
+
 The formal OWL ontology and a SHACL shape will be inside each UML model folder under specific folders as described 
 below.
 ```
