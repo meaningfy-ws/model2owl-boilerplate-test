@@ -95,7 +95,7 @@ jobs:
 
     - name: Clone model2owl repository (develop branch)
       run: |
-        git clone --branch develop https://github.com/OP-TED/model2owl.git
+        git clone --branch release/3.2.0 https://github.com/OP-TED/model2owl.git
         echo "model2owl/" >> .gitignore
         echo "✅ Added model2owl/ to .gitignore"
 
