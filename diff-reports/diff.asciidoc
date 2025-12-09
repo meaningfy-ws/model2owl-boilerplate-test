@@ -3,12 +3,12 @@
 
 
 
-This report is automatically generated from the diffus9uBXz9JW RDF dataset on 09-Dec-2025T10:11:36
+This report is automatically generated from the diffusG8bRMkwX RDF dataset on 09-Dec-2025T17:27:46
 and aims at presenting the difference between two versions of an RDFS/OWL vocabulary following the owl-core-en-only application profile.
 
 == Report details
 
-*Dataset ID:* diffus9uBXz9JW
+*Dataset ID:* diffusG8bRMkwX
 
 *Dataset name:* diffus
 
@@ -16,7 +16,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
 
 *New version file:* demo_ontology_CM_combined.ttl
 
-*Time:* 09-Dec-2025T10:11:36
+*Time:* 09-Dec-2025T17:27:46
 
 *Application profile:* owl-core-en-only
 
@@ -1024,7 +1024,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
                     
     
         
-|6
+|1
         
     
 
@@ -1041,7 +1041,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
                     
     
         
-|6
+|1
         
     
 
@@ -2975,7 +2975,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
             
     
         
-|64
+|63
         
     
 
@@ -3117,7 +3117,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
                     
     
         
-|64
+|63
         
     
 
@@ -3570,7 +3570,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
                     
     
         
-|45
+|44
         
     
 
@@ -4293,7 +4293,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
                     
     
         
-|36
+|35
         
     
 
@@ -6783,7 +6783,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|This version is automatically generated from demo_ontology_CM.xml on 2025-12-04
+|This version is automatically generated from demo_ontology_CM.xml on 2025-12-09
             
         
             
@@ -8273,7 +8273,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|2025-09-04
+|2025-12-09
             
         
             
@@ -8382,172 +8382,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|http://data.europa.eu/eli/ontology#
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|eProcurement Ontology - core
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
 |http://data.europa.eu/m8g/
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|eProcurement Ontology - core
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|http://www.w3.org/2006/time
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|eProcurement Ontology - core
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|http://www.w3.org/ns/locn
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|eProcurement Ontology - core
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|http://www.w3.org/ns/org#
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|eProcurement Ontology - core
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|ns3:person
             
         
             
@@ -8643,52 +8478,6 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|http://data.europa.eu/eli/ontology#
-            
-        
-            
-            
-|
-            
-        
-            
-            
-|https://data.europa.eu/m8g
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|This artefact provides the definitions for the eProcurement Ontology Core.
-        This artefact excludes the restrictions.
-        The eProcurement Ontology describes objects and concepts, with definitions, attributes and relationships which are present within the European public procurement domain.
-        The provision of these concepts provides the basis for a common understanding of the domain for all stakeholders ensuring the quality of data exchange and transparency.
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
 |http://data.europa.eu/m8g/
             
         
@@ -8699,191 +8488,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns4:m8g
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|This artefact provides the definitions for the eProcurement Ontology Core.
-        This artefact excludes the restrictions.
-        The eProcurement Ontology describes objects and concepts, with definitions, attributes and relationships which are present within the European public procurement domain.
-        The provision of these concepts provides the basis for a common understanding of the domain for all stakeholders ensuring the quality of data exchange and transparency.
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|ns2:time
-            
-        
-            
-            
-|
-            
-        
-            
-            
-|ns4:m8g
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|This artefact provides the definitions for the eProcurement Ontology Core.
-        This artefact excludes the restrictions.
-        The eProcurement Ontology describes objects and concepts, with definitions, attributes and relationships which are present within the European public procurement domain.
-        The provision of these concepts provides the basis for a common understanding of the domain for all stakeholders ensuring the quality of data exchange and transparency.
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|ns3:locn
-            
-        
-            
-            
-|
-            
-        
-            
-            
-|ns4:m8g
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|This artefact provides the definitions for the eProcurement Ontology Core.
-        This artefact excludes the restrictions.
-        The eProcurement Ontology describes objects and concepts, with definitions, attributes and relationships which are present within the European public procurement domain.
-        The provision of these concepts provides the basis for a common understanding of the domain for all stakeholders ensuring the quality of data exchange and transparency.
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|http://www.w3.org/ns/org#
-            
-        
-            
-            
-|
-            
-        
-            
-            
-|ns4:m8g
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|This artefact provides the definitions for the eProcurement Ontology Core.
-        This artefact excludes the restrictions.
-        The eProcurement Ontology describes objects and concepts, with definitions, attributes and relationships which are present within the European public procurement domain.
-        The provision of these concepts provides the basis for a common understanding of the domain for all stakeholders ensuring the quality of data exchange and transparency.
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|owl:imports
-            
-        
-            
-            
-|ns3:person
-            
-        
-            
-            
-|
-            
-        
-            
-            
-|ns4:m8g
+|https://data.europa.eu/m8g
             
         
             
@@ -9118,7 +8723,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns5:index.html
+|ns3:index.html
             
         
             
@@ -9164,7 +8769,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns6:releases
+|ns4:releases
             
         
             
@@ -9174,7 +8779,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns7:index.html
+|ns5:index.html
             
         
             
@@ -9210,7 +8815,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns5:index.html
+|ns3:index.html
             
         
             
@@ -9256,7 +8861,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns6:releases
+|ns4:releases
             
         
             
@@ -9266,7 +8871,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns8:eprocurementontology
+|ns6:eprocurementontology
             
         
             
@@ -9727,7 +9332,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Constraint
+|ns7:Constraint
             
         
             
@@ -9745,7 +9350,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:ContactPoint
+|ns7:ContactPoint
             
         
             
@@ -9763,7 +9368,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Criterion
+|ns7:Criterion
             
         
             
@@ -9781,7 +9386,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
@@ -9799,7 +9404,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationConcept
+|ns7:InformationConcept
             
         
             
@@ -9817,7 +9422,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationRequirement
+|ns7:InformationRequirement
             
         
             
@@ -9835,7 +9440,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:PublicOrganisation
+|ns7:PublicOrganisation
             
         
             
@@ -9853,7 +9458,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -10033,7 +9638,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Geometry
+|ns9:Geometry
             
         
             
@@ -10421,7 +10026,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Channel
+|ns7:Channel
             
         
             
@@ -10454,7 +10059,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Constraint
+|ns7:Constraint
             
         
             
@@ -10487,7 +10092,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:ContactPoint
+|ns7:ContactPoint
             
         
             
@@ -10520,7 +10125,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Criterion
+|ns7:Criterion
             
         
             
@@ -10553,7 +10158,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
@@ -10586,7 +10191,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationConcept
+|ns7:InformationConcept
             
         
             
@@ -10619,7 +10224,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationRequirement
+|ns7:InformationRequirement
             
         
             
@@ -10652,7 +10257,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:PublicOrganisation
+|ns7:PublicOrganisation
             
         
             
@@ -10685,7 +10290,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -10949,7 +10554,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -10982,7 +10587,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -11015,7 +10620,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Geometry
+|ns9:Geometry
             
         
             
@@ -11114,7 +10719,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:Person
+|ns10:Person
             
         
             
@@ -11535,7 +11140,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Channel
+|ns7:Channel
             
         
             
@@ -11568,7 +11173,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Constraint
+|ns7:Constraint
             
         
             
@@ -11601,7 +11206,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:ContactPoint
+|ns7:ContactPoint
             
         
             
@@ -11634,7 +11239,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Criterion
+|ns7:Criterion
             
         
             
@@ -11667,7 +11272,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
@@ -11700,7 +11305,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationConcept
+|ns7:InformationConcept
             
         
             
@@ -11733,7 +11338,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationRequirement
+|ns7:InformationRequirement
             
         
             
@@ -11766,7 +11371,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:PublicOrganisation
+|ns7:PublicOrganisation
             
         
             
@@ -11799,7 +11404,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -12063,7 +11668,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -12096,7 +11701,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -12129,7 +11734,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Geometry
+|ns9:Geometry
             
         
             
@@ -12228,7 +11833,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:Person
+|ns10:Person
             
         
             
@@ -13093,7 +12698,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Channel
+|ns7:Channel
             
         
             
@@ -13126,7 +12731,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:ContactPoint
+|ns7:ContactPoint
             
         
             
@@ -13159,7 +12764,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:PublicOrganisation
+|ns7:PublicOrganisation
             
         
             
@@ -13192,7 +12797,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -13619,7 +13224,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Constraint
+|ns7:Constraint
             
         
             
@@ -13652,7 +13257,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Constraint
+|ns7:Constraint
             
         
             
@@ -13672,7 +13277,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -13685,7 +13290,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Criterion
+|ns7:Criterion
             
         
             
@@ -13705,7 +13310,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -13718,7 +13323,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationRequirement
+|ns7:InformationRequirement
             
         
             
@@ -13738,7 +13343,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -13751,7 +13356,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:PublicOrganisation
+|ns7:PublicOrganisation
             
         
             
@@ -13982,7 +13587,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:Person
+|ns10:Person
             
         
             
@@ -14468,44 +14073,6 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns1:fulfillsEnvironmentalRequirement
-            
-        
-            
-            
-|fulfills Environmental Requirement
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|ns1:GreenProcurement
-            
-        
-            
-            
-|skos:Concept
-            
-        
-            
-            
-|
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
 |ns1:hasBalanceAmount
             
         
@@ -15096,7 +14663,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -15134,7 +14701,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -15476,7 +15043,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -15722,7 +15289,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:confidentialityLevelType
+|ns7:confidentialityLevelType
             
         
             
@@ -15737,7 +15304,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
@@ -15760,7 +15327,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:constrains
+|ns7:constrains
             
         
             
@@ -15775,12 +15342,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Constraint
+|ns7:Constraint
             
         
             
             
-|ns9:InformationConcept
+|ns7:InformationConcept
             
         
             
@@ -15798,7 +15365,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasConcept
+|ns7:hasConcept
             
         
             
@@ -15813,12 +15380,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
             
-|ns9:InformationConcept
+|ns7:InformationConcept
             
         
             
@@ -15836,7 +15403,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasEvidenceTypeList
+|ns7:hasEvidenceTypeList
             
         
             
@@ -15851,12 +15418,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
             
-|ns9:EvidenceTypeList
+|ns7:EvidenceTypeList
             
         
             
@@ -15874,7 +15441,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasRequirement
+|ns7:hasRequirement
             
         
             
@@ -15889,12 +15456,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -15912,7 +15479,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:isDerivedFrom
+|ns7:isDerivedFrom
             
         
             
@@ -15927,12 +15494,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
             
-|ns13:LegalResource
+|ns11:LegalResource
             
         
             
@@ -15950,7 +15517,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:providesValueFor
+|ns7:providesValueFor
             
         
             
@@ -15988,7 +15555,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:registeredAddress
+|ns7:registeredAddress
             
         
             
@@ -16008,7 +15575,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -16026,7 +15593,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:registeredAddress
+|ns7:registeredAddress
             
         
             
@@ -16041,12 +15608,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:Person
+|ns10:Person
             
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -16064,7 +15631,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsConcept
+|ns7:supportsConcept
             
         
             
@@ -16079,12 +15646,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
             
-|ns9:InformationConcept
+|ns7:InformationConcept
             
         
             
@@ -16102,7 +15669,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsRequirement
+|ns7:supportsRequirement
             
         
             
@@ -16117,12 +15684,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
@@ -16140,7 +15707,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsValue
+|ns7:supportsValue
             
         
             
@@ -16155,12 +15722,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
             
-|ns9:SupportedValue
+|ns7:SupportedValue
             
         
             
@@ -16178,7 +15745,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:validityPeriodConstraint
+|ns7:validityPeriodConstraint
             
         
             
@@ -16231,12 +15798,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
             
-|ns9:EvidenceType
+|ns7:EvidenceType
             
         
             
@@ -16307,7 +15874,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Criterion
+|ns7:Criterion
             
         
             
@@ -16520,7 +16087,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16540,7 +16107,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16558,7 +16125,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16578,7 +16145,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16596,7 +16163,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16616,7 +16183,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16634,7 +16201,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16654,7 +16221,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16672,7 +16239,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16692,7 +16259,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16710,7 +16277,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16730,7 +16297,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16748,7 +16315,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16763,12 +16330,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Evidence
+|ns7:Evidence
             
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16786,7 +16353,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16801,12 +16368,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:InformationConcept
+|ns7:InformationConcept
             
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16824,7 +16391,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16839,12 +16406,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Requirement
+|ns7:Requirement
             
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16862,7 +16429,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16882,7 +16449,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16900,7 +16467,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -16920,7 +16487,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -16938,7 +16505,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:address
+|ns9:address
             
         
             
@@ -16953,12 +16520,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:ContactPoint
+|ns7:ContactPoint
             
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -16976,7 +16543,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:address
+|ns9:address
             
         
             
@@ -16996,7 +16563,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -17014,7 +16581,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:address
+|ns9:address
             
         
             
@@ -17034,7 +16601,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
@@ -17052,7 +16619,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:addressID
+|ns9:addressID
             
         
             
@@ -17067,12 +16634,12 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Address
+|ns9:Address
             
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -17090,7 +16657,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geographicIdentifier
+|ns9:geographicIdentifier
             
         
             
@@ -17110,7 +16677,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:Identifier
+|ns8:Identifier
             
         
             
@@ -17128,7 +16695,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geometry
+|ns9:geometry
             
         
             
@@ -17148,7 +16715,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:Geometry
+|ns9:Geometry
             
         
             
@@ -17471,39 +17038,6 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns1:fulfillsEnvironmentalRequirement
-            
-        
-            
-            
-|fulfills Environmental Requirement
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|skos:prefLabel
-            
-        
-            
-            
-|fulfills Environmental Requirement
-            
-        
-            
-            
-|en
-            
-        
-
-        
-        
-            
-            
 |ns1:hasBalanceAmount
             
         
@@ -18527,7 +18061,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns13:uri_schema
+|ns11:uri_schema
             
         
             
@@ -18560,7 +18094,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:confidentialityLevelType
+|ns7:confidentialityLevelType
             
         
             
@@ -18593,7 +18127,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:constrains
+|ns7:constrains
             
         
             
@@ -18626,7 +18160,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasConcept
+|ns7:hasConcept
             
         
             
@@ -18659,7 +18193,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasEvidenceTypeList
+|ns7:hasEvidenceTypeList
             
         
             
@@ -18692,7 +18226,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasRequirement
+|ns7:hasRequirement
             
         
             
@@ -18725,7 +18259,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:isDerivedFrom
+|ns7:isDerivedFrom
             
         
             
@@ -18758,7 +18292,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:providesValueFor
+|ns7:providesValueFor
             
         
             
@@ -18791,7 +18325,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:registeredAddress
+|ns7:registeredAddress
             
         
             
@@ -18824,7 +18358,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsConcept
+|ns7:supportsConcept
             
         
             
@@ -18857,7 +18391,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsRequirement
+|ns7:supportsRequirement
             
         
             
@@ -18890,7 +18424,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsValue
+|ns7:supportsValue
             
         
             
@@ -18923,7 +18457,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:validityPeriodConstraint
+|ns7:validityPeriodConstraint
             
         
             
@@ -19220,7 +18754,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -19253,7 +18787,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:address
+|ns9:address
             
         
             
@@ -19286,7 +18820,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:addressID
+|ns9:addressID
             
         
             
@@ -19319,7 +18853,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geographicIdentifier
+|ns9:geographicIdentifier
             
         
             
@@ -19352,7 +18886,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geometry
+|ns9:geometry
             
         
             
@@ -19728,39 +19262,6 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
             
             
 |Relates to Organization.
-            
-        
-            
-            
-|en
-            
-        
-
-        
-        
-            
-            
-|ns1:fulfillsEnvironmentalRequirement
-            
-        
-            
-            
-|fulfills Environmental Requirement
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|skos:definition
-            
-        
-            
-            
-|The requirement to which the concept meets.
             
         
             
@@ -20235,7 +19736,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns13:uri_schema
+|ns11:uri_schema
             
         
             
@@ -20268,7 +19769,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:confidentialityLevelType
+|ns7:confidentialityLevelType
             
         
             
@@ -20301,7 +19802,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:constrains
+|ns7:constrains
             
         
             
@@ -20334,7 +19835,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasConcept
+|ns7:hasConcept
             
         
             
@@ -20367,7 +19868,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasEvidenceTypeList
+|ns7:hasEvidenceTypeList
             
         
             
@@ -20400,7 +19901,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:hasRequirement
+|ns7:hasRequirement
             
         
             
@@ -20433,7 +19934,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:isDerivedFrom
+|ns7:isDerivedFrom
             
         
             
@@ -20466,7 +19967,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:providesValueFor
+|ns7:providesValueFor
             
         
             
@@ -20499,7 +20000,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:registeredAddress
+|ns7:registeredAddress
             
         
             
@@ -20532,7 +20033,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsConcept
+|ns7:supportsConcept
             
         
             
@@ -20565,7 +20066,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsRequirement
+|ns7:supportsRequirement
             
         
             
@@ -20598,7 +20099,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:supportsValue
+|ns7:supportsValue
             
         
             
@@ -20631,7 +20132,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:validityPeriodConstraint
+|ns7:validityPeriodConstraint
             
         
             
@@ -20928,7 +20429,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -20961,7 +20462,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:address
+|ns9:address
             
         
             
@@ -20994,7 +20495,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:addressID
+|ns9:addressID
             
         
             
@@ -21027,7 +20528,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geographicIdentifier
+|ns9:geographicIdentifier
             
         
             
@@ -21060,7 +20561,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geometry
+|ns9:geometry
             
         
             
@@ -21985,7 +21486,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:identifier
+|ns8:identifier
             
         
             
@@ -22453,39 +21954,6 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
             
             
 |concerns Procurement Element
-            
-        
-            
-            
-|en
-            
-        
-            
-            
-|rdfs:isDefinedBy
-            
-        
-            
-            
-|ns1:core
-            
-        
-            
-            
-|
-            
-        
-
-        
-        
-            
-            
-|ns1:fulfillsEnvironmentalRequirement
-            
-        
-            
-            
-|fulfills Environmental Requirement
             
         
             
@@ -23695,7 +23163,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:bias
+|ns7:bias
             
         
             
@@ -23710,7 +23178,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Criterion
+|ns7:Criterion
             
         
             
@@ -23733,7 +23201,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:birthDate
+|ns7:birthDate
             
         
             
@@ -23748,7 +23216,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:Person
+|ns10:Person
             
         
             
@@ -23771,7 +23239,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:coordinates
+|ns7:coordinates
             
         
             
@@ -23809,7 +23277,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:email
+|ns7:email
             
         
             
@@ -23847,7 +23315,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:latitude
+|ns7:latitude
             
         
             
@@ -23885,7 +23353,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:longitude
+|ns7:longitude
             
         
             
@@ -23923,7 +23391,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:telephone
+|ns7:telephone
             
         
             
@@ -23961,7 +23429,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:weight
+|ns7:weight
             
         
             
@@ -23976,7 +23444,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:Criterion
+|ns7:Criterion
             
         
             
@@ -23999,7 +23467,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:weightingConsiderationDescription
+|ns7:weightingConsiderationDescription
             
         
             
@@ -24379,7 +23847,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:schemaAgency
+|ns8:schemaAgency
             
         
             
@@ -24417,7 +23885,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:addressArea
+|ns9:addressArea
             
         
             
@@ -24455,7 +23923,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:fullAddress
+|ns9:fullAddress
             
         
             
@@ -24493,7 +23961,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geographicName
+|ns9:geographicName
             
         
             
@@ -24531,7 +23999,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:locatorDesignator
+|ns9:locatorDesignator
             
         
             
@@ -24569,7 +24037,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:locatorName
+|ns9:locatorName
             
         
             
@@ -24607,7 +24075,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:postCode
+|ns9:postCode
             
         
             
@@ -24645,7 +24113,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:postName
+|ns9:postName
             
         
             
@@ -24683,7 +24151,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:thoroughfare
+|ns9:thoroughfare
             
         
             
@@ -24721,7 +24189,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:birthName
+|ns10:birthName
             
         
             
@@ -24759,7 +24227,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:patronymicName
+|ns10:patronymicName
             
         
             
@@ -25008,7 +24476,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:bias
+|ns7:bias
             
         
             
@@ -25041,7 +24509,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:birthDate
+|ns7:birthDate
             
         
             
@@ -25074,7 +24542,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:coordinates
+|ns7:coordinates
             
         
             
@@ -25107,7 +24575,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:email
+|ns7:email
             
         
             
@@ -25140,7 +24608,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:latitude
+|ns7:latitude
             
         
             
@@ -25173,7 +24641,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:longitude
+|ns7:longitude
             
         
             
@@ -25206,7 +24674,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:telephone
+|ns7:telephone
             
         
             
@@ -25239,7 +24707,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:weight
+|ns7:weight
             
         
             
@@ -25272,7 +24740,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:weightingConsiderationDescription
+|ns7:weightingConsiderationDescription
             
         
             
@@ -25602,7 +25070,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:schemaAgency
+|ns8:schemaAgency
             
         
             
@@ -25635,7 +25103,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:addressArea
+|ns9:addressArea
             
         
             
@@ -25668,7 +25136,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:fullAddress
+|ns9:fullAddress
             
         
             
@@ -25701,7 +25169,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geographicName
+|ns9:geographicName
             
         
             
@@ -25734,7 +25202,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:locatorDesignator
+|ns9:locatorDesignator
             
         
             
@@ -25767,7 +25235,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:locatorName
+|ns9:locatorName
             
         
             
@@ -25800,7 +25268,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:postCode
+|ns9:postCode
             
         
             
@@ -25833,7 +25301,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:postName
+|ns9:postName
             
         
             
@@ -25866,7 +25334,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:thoroughfare
+|ns9:thoroughfare
             
         
             
@@ -25899,7 +25367,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:birthName
+|ns10:birthName
             
         
             
@@ -25932,7 +25400,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:patronymicName
+|ns10:patronymicName
             
         
             
@@ -26287,7 +25755,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:bias
+|ns7:bias
             
         
             
@@ -26320,7 +25788,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:birthDate
+|ns7:birthDate
             
         
             
@@ -26353,7 +25821,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:coordinates
+|ns7:coordinates
             
         
             
@@ -26386,7 +25854,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:email
+|ns7:email
             
         
             
@@ -26419,7 +25887,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:latitude
+|ns7:latitude
             
         
             
@@ -26452,7 +25920,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:longitude
+|ns7:longitude
             
         
             
@@ -26485,7 +25953,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:telephone
+|ns7:telephone
             
         
             
@@ -26518,7 +25986,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:weight
+|ns7:weight
             
         
             
@@ -26551,7 +26019,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns9:weightingConsiderationDescription
+|ns7:weightingConsiderationDescription
             
         
             
@@ -26881,7 +26349,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns10:schemaAgency
+|ns8:schemaAgency
             
         
             
@@ -26914,7 +26382,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:addressArea
+|ns9:addressArea
             
         
             
@@ -26947,7 +26415,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:fullAddress
+|ns9:fullAddress
             
         
             
@@ -26980,7 +26448,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:geographicName
+|ns9:geographicName
             
         
             
@@ -27013,7 +26481,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:locatorDesignator
+|ns9:locatorDesignator
             
         
             
@@ -27046,7 +26514,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:locatorName
+|ns9:locatorName
             
         
             
@@ -27079,7 +26547,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:postCode
+|ns9:postCode
             
         
             
@@ -27112,7 +26580,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:postName
+|ns9:postName
             
         
             
@@ -27145,7 +26613,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns11:thoroughfare
+|ns9:thoroughfare
             
         
             
@@ -27178,7 +26646,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:birthName
+|ns10:birthName
             
         
             
@@ -27211,7 +26679,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:patronymicName
+|ns10:patronymicName
             
         
             
@@ -28023,7 +27491,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:birthName
+|ns10:birthName
             
         
             
@@ -28056,7 +27524,7 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
         
             
             
-|ns12:patronymicName
+|ns10:patronymicName
             
         
             
@@ -28357,51 +27825,43 @@ and aims at presenting the difference between two versions of an RDFS/OWL vocabu
 
         
 |ns10
-|http://www.w3.org/ns/adms#
-
-        
-|ns11
-|http://www.w3.org/ns/locn#
-
-        
-|ns12
 |http://www.w3.org/ns/person#
 
         
-|ns13
+|ns11
 |http://data.europa.eu/eli/ontology#
 
         
 |ns2
-|http://www.w3.org/2006/
-
-        
-|ns3
-|http://www.w3.org/ns/
-
-        
-|ns4
 |https://data.europa.eu/
 
         
-|ns5
+|ns3
 |https://docs.ted.europa.eu/home/
 
         
-|ns6
+|ns4
 |https://github.com/OP-TED/ePO/
 
         
-|ns7
+|ns5
 |https://docs.ted.europa.eu/EPO/latest/
 
         
-|ns8
+|ns6
 |https://github.com/eprocurementontology/
 
         
-|ns9
+|ns7
 |http://data.europa.eu/m8g/
+
+        
+|ns8
+|http://www.w3.org/ns/adms#
+
+        
+|ns9
+|http://www.w3.org/ns/locn#
 
         
 |odrl
