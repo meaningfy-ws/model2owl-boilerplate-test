@@ -552,7 +552,7 @@ jobs:
 
   build_pages:
     needs: [detect_modules, commit_transform]
-    if: always() && !cancelled()
+    if: false  # Disabled for testing
     runs-on: ubuntu-latest
     steps:
       - uses: actions/configure-pages@v4
@@ -610,7 +610,7 @@ jobs:
 
   deploy_pages:
     needs: build_pages
-    if: always() && !cancelled()
+    if: false  # Disabled for testing
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
