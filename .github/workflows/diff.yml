@@ -65,8 +65,8 @@ jobs:
           # Load config
           source "${DIFF_CONFIG}" 2>/dev/null || true
 
-          if [ "${{ github.event_name }}" == "workflow_call" ]; then
-            # Single module from caller
+          if [ -n "${{ inputs.module }}" ]; then
+            # Single module from workflow_call
             echo 'modules=["${{ inputs.module }}"]' >> $GITHUB_OUTPUT
             echo 'count=1' >> $GITHUB_OUTPUT
           else
