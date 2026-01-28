@@ -3,9 +3,9 @@ name: RDF Diff
 on:
   workflow_call:
     inputs:
-      module:
-        description: 'Module name (e.g., demo_ontology)'
-        required: true
+      modules:
+        description: 'JSON array of module names'
+        required: false
         type: string
       revision_to_compare:
         description: 'Version to compare against (branch/tag/commit)'
@@ -65,31 +65,27 @@ jobs:
           # Load config
           source "${DIFF_CONFIG}" 2>/dev/null || true
 
-          if [ -n "${{ inputs.module }}" ]; then
-            # Single module from workflow_call
-            echo 'modules=["${{ inputs.module }}"]' >> $GITHUB_OUTPUT
-            echo 'count=1' >> $GITHUB_OUTPUT
+          INPUT='${{ inputs.modules }}'
+
+          if [ -n "$INPUT" ] && [[ "$INPUT" == \[* ]]; then
+            # Already JSON array (from workflow_call)
+            MODULES_JSON="$INPUT"
+          elif [ -n "$INPUT" ]; then
+            # Comma-separated string (from workflow_dispatch)
+            MODULES_JSON=$(echo "$INPUT" | jq -Rc 'split(",") | map(gsub("^\\s+|\\s+$";""))')
+          elif [ -n "${MODULES:-}" ]; then
+            # From config file
+            MODULES_JSON=$(echo "$MODULES" | jq -Rc 'split(",") | map(gsub("^\\s+|\\s+$";""))')
           else
-            # Manual dispatch: input > config > auto-detect
-            INPUT="${{ inputs.modules }}"
-            if [ -z "$INPUT" ]; then
-              INPUT="${MODULES:-}"
-            fi
-
-            if [ -z "$INPUT" ]; then
-              # Auto-detect from NEW_ONTOLOGY_DIR
-              NEW_DIR="${NEW_ONTOLOGY_DIR:-${IMPL_DIR}}"
-              MODULES_JSON=$(ls -d ${NEW_DIR}/*/owl_ontology 2>/dev/null | cut -d/ -f2 | jq -Rsc 'split("\n") | map(select(. != ""))')
-            else
-              # Parse comma-separated
-              MODULES_JSON=$(echo "$INPUT" | jq -Rc 'split(",") | map(gsub("^\\s+|\\s+$";""))')
-            fi
-
-            COUNT=$(echo "$MODULES_JSON" | jq length)
-            echo "Resolved $COUNT module(s): $MODULES_JSON"
-            echo "modules=${MODULES_JSON}" >> $GITHUB_OUTPUT
-            echo "count=$COUNT" >> $GITHUB_OUTPUT
+            # Auto-detect from NEW_ONTOLOGY_DIR
+            NEW_DIR="${NEW_ONTOLOGY_DIR:-${IMPL_DIR}}"
+            MODULES_JSON=$(ls -d ${NEW_DIR}/*/owl_ontology 2>/dev/null | cut -d/ -f2 | jq -Rsc 'split("\n") | map(select(. != ""))')
           fi
+
+          COUNT=$(echo "$MODULES_JSON" | jq length)
+          echo "Resolved $COUNT module(s): $MODULES_JSON"
+          echo "modules=${MODULES_JSON}" >> $GITHUB_OUTPUT
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
 
   # Compare old vs new OWL/SHACL and generate diff reports
   diff:

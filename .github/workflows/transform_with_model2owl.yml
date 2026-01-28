@@ -459,13 +459,9 @@ jobs:
   # Compare new outputs against previous version
   diff:
     needs: [detect_modules, commit_transform]
-    strategy:  # Run diff for each module in parallel
-      fail-fast: false  # Continue other modules if one fails
-      matrix:
-        module: ${{ fromJson(needs.detect_modules.outputs.modules) }}
     uses: ./.github/workflows/diff.yml
     with:
-      module: ${{ matrix.module }}
+      modules: ${{ needs.detect_modules.outputs.modules }}  # Pass all modules
       from_workflow_artifacts: true  # Use artifacts instead of committed files
     secrets: inherit
 
