@@ -352,3 +352,24 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate workflow summary
+        run: |
+          MODULES_JSON='${{ needs.resolve.outputs.modules }}'
+          COUNT='${{ needs.resolve.outputs.count }}'
+          REPO_URL="${{ github.server_url }}/${{ github.repository }}"
+
+          cat >> $GITHUB_STEP_SUMMARY << EOF
+          ## ${{ github.workflow }} - Run #${{ github.run_number }}
+
+          **Modules compared:** ${COUNT}
+          EOF
+
+          echo "$MODULES_JSON" | jq -r '.[]' | while read module; do
+            echo "- ${module} → [diff-reports/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/diff-reports/${module})" >> $GITHUB_STEP_SUMMARY
+          done
+
+          cat >> $GITHUB_STEP_SUMMARY << EOF
+
+          **Commit:** [Diff reports](${REPO_URL}/commits/${{ github.ref_name }}) ✓
+          EOF
