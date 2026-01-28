@@ -224,11 +224,13 @@ New version of model files must be committed to the repository where the workflo
 defined. The workflow allows comparing the files from the current revision with
 one committed in a previous revision or even in a different repository.
 
-The diff workflow is called automatically by the transform workflow after
+The RDF diff workflow is called automatically by the transform workflow after
 generating new OWL/SHACL artefacts. It can also be triggered manually via
 workflow dispatch.
 
 Configuration is managed through [diff-config.env](.github/workflows/diff-config.env).
+This file allows you to override the default RDF diff behaviour on push-triggered runs,
+such as which revision to compare against or which modules to include.
 Values can also be set as [GitHub Variables](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables#creating-configuration-variables-for-a-repository)
 or passed as workflow inputs. Priority: workflow inputs > config file > repository variables > defaults.
 
