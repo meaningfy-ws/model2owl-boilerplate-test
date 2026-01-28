@@ -46,6 +46,7 @@ env:
   DIFF_CONFIG: .github/workflows/diff-config.env
 
 jobs:
+  # Resolve modules: single from workflow_call, or list/auto-detect from dispatch
   resolve:
     runs-on: ubuntu-latest
     outputs:
@@ -86,6 +87,7 @@ jobs:
             echo "modules=${MODULES_JSON}" >> $GITHUB_OUTPUT
           fi
 
+  # Compare old vs new OWL/SHACL and generate diff reports
   diff:
     needs: resolve
     strategy:
@@ -97,7 +99,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Needed to fetch old version
 
       - name: Download transform artifacts
         if: inputs.from_workflow_artifacts == true
@@ -311,6 +313,7 @@ jobs:
           path: ${{ steps.config.outputs.outdir }}/${{ matrix.module }}/
           retention-days: 1
 
+  # Commit results only when triggered manually (not from workflow_call)
   commit_dispatch:
     if: github.event_name == 'workflow_dispatch'
     needs: diff

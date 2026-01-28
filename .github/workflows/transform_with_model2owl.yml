@@ -14,14 +14,10 @@ permissions:
   id-token: write
 
 env:
-  # Directory containing module implementations. Update on.push.paths if you change this.
-  IMPL_DIR: implementation
+  IMPL_DIR: implementation  # Update on.push.paths if changed
 
 jobs:
-  # ============================================================
-  # DETECT MODULES: Auto-detect from IMPL_DIR directory
-  # ============================================================
-
+  # Find which modules have changed and need processing
   detect_modules:
     runs-on: ubuntu-latest
     outputs:
@@ -31,35 +27,32 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-          fetch-depth: 0
+          fetch-depth: 0  # Needed for git diff
           sparse-checkout: ${{ env.IMPL_DIR }}
 
+      # On push: only process modules with changed XMI files
+      # On manual dispatch or first push: process all modules
       - name: Determine modules to process
         id: detect
         run: |
-          # Try: get only changed modules (push events with valid before SHA)
           BEFORE="${{ github.event.before }}"
+          # Null SHA means first push to branch, so no diff possible
           if [ "${{ github.event_name }}" == "push" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
             MODULES=$(git diff --name-only "$BEFORE" "${{ github.sha }}" \
               -- "${IMPL_DIR}/*/xmi_conceptual_model/*.xml" | cut -d/ -f2 | sort -u)
           fi
 
-          # Fallback: all modules (manual dispatch, first push, or no changes detected)
           if [ -z "$MODULES" ]; then
             MODULES=$(ls -d ${IMPL_DIR}/*/xmi_conceptual_model | cut -d/ -f2)
           fi
 
-          # Convert to JSON array
           MODULES_JSON=$(echo "$MODULES" | jq -Rsc 'split("\n") | map(select(. != ""))')
 
           echo "Detected modules: $MODULES_JSON"
           echo "modules=$MODULES_JSON" >> $GITHUB_OUTPUT
           echo "matrix={\"module\":$MODULES_JSON}" >> $GITHUB_OUTPUT
 
-  # ============================================================
-  # PARALLEL TRANSFORM JOBS - No commits, upload artifacts
-  # ============================================================
-
+  # These jobs run in parallel and upload artifacts
   report_and_glossary:
     needs: detect_modules
     runs-on: ubuntu-latest
@@ -289,10 +282,7 @@ jobs:
           path: implementation/*/jsonld_context/
           retention-days: 1
 
-  # ============================================================
-  # SEQUENTIAL: generate_respec needs SHACL from transform
-  # ============================================================
-
+  # Needs SHACL files from transform
   generate_respec:
     needs: [detect_modules, transform]
     runs-on: ubuntu-latest
@@ -353,7 +343,6 @@ jobs:
               OUTPUT_FOLDER_PATH=../$OUTPUT_PATH_RESPEC \
               NAMESPACES_USER_XML_FILE_PATH=${NS_XML_FILE_PATH}
 
-            # Copy templates (keep model2owl base.j2)
             if [ -d "../implementation/${implementation}/respec_resources/templates" ]; then
               for template_file in "../implementation/${implementation}/respec_resources/templates"/*.j2; do
                 if [ -f "$template_file" ]; then
@@ -399,10 +388,7 @@ jobs:
           path: implementation/*/respec/
           retention-days: 1
 
-  # ============================================================
-  # COMMIT 1: Commit transform outputs (TTL, glossary, respec, etc.)
-  # ============================================================
-
+  # Collect all artifacts and commit to repo
   commit_transform:
     needs: [report_and_glossary, transform, generate_jsonld_context, generate_respec]
     runs-on: ubuntu-latest
@@ -422,33 +408,27 @@ jobs:
           echo "=== Downloaded artifacts ==="
           find artifacts -type f | head -50
 
-          # Merge report/glossary
           if [ -d "artifacts/report-glossary-output" ]; then
             cp -r artifacts/report-glossary-output/glossary . 2>/dev/null || true
             cp -r artifacts/report-glossary-output/implementation/* implementation/ 2>/dev/null || true
           fi
 
-          # Merge OWL
           if [ -d "artifacts/transform-owl-output" ]; then
             cp -r artifacts/transform-owl-output/* implementation/ 2>/dev/null || true
           fi
 
-          # Merge SHACL
           if [ -d "artifacts/transform-shacl-output" ]; then
             cp -r artifacts/transform-shacl-output/* implementation/ 2>/dev/null || true
           fi
 
-          # Merge JSON-LD
           if [ -d "artifacts/jsonld-output" ]; then
             cp -r artifacts/jsonld-output/* implementation/ 2>/dev/null || true
           fi
 
-          # Merge ReSpec
           if [ -d "artifacts/respec-output" ]; then
             cp -r artifacts/respec-output/* implementation/ 2>/dev/null || true
           fi
 
-          # Cleanup downloaded artifacts
           rm -rf artifacts/
 
           echo "=== Merged files ==="
@@ -470,26 +450,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # ============================================================
-  # MATRIX DIFF: Call diff.yml for each module (after commit)
-  # ============================================================
-
+  # Compare new outputs against previous version
   diff:
     needs: [detect_modules, commit_transform]
-    strategy:
-      fail-fast: false
+    strategy:  # Run diff for each module in parallel
+      fail-fast: false  # Continue other modules if one fails
       matrix:
         module: ${{ fromJson(needs.detect_modules.outputs.modules) }}
     uses: ./.github/workflows/diff.yml
     with:
       module: ${{ matrix.module }}
-      from_workflow_artifacts: true
+      from_workflow_artifacts: true  # Use artifacts instead of committed files
     secrets: inherit
 
-  # ============================================================
-  # COMMIT 2: Commit diff reports
-  # ============================================================
-
+  # Commit diff reports to repo (runs even if some diffs failed)
   commit_diff:
     needs: diff
     if: always() && !cancelled()
@@ -500,7 +474,7 @@ jobs:
           ref: ${{ github.ref }}
           fetch-depth: 0
 
-      - name: Pull latest changes
+      - name: Pull latest changes  # commit_transform may have pushed
         run: git pull origin ${{ github.ref_name }}
 
       - name: Download diff artifacts
@@ -514,7 +488,6 @@ jobs:
           echo "=== Downloaded diff artifacts ==="
           find artifacts -type f | head -20
 
-          # Merge diff reports
           mkdir -p diff-reports
           for diff_dir in artifacts/diff-*/; do
             if [ -d "$diff_dir" ]; then
@@ -524,7 +497,6 @@ jobs:
             fi
           done
 
-          # Cleanup downloaded artifacts
           rm -rf artifacts/
 
           echo "=== Merged diff reports ==="
@@ -546,13 +518,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # ============================================================
-  # PAGES: Build and deploy
-  # ============================================================
-
+  # Build and deploy GitHub Pages (disabled)
   build_pages:
     needs: [detect_modules, commit_transform]
-    if: false  # Disabled for testing
+    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/configure-pages@v4
@@ -580,7 +549,6 @@ jobs:
             fi
           done
 
-          # Create landing page
           cat > _site/index.html << 'HTMLEOF'
           <!DOCTYPE html>
           <html lang="en">
@@ -610,7 +578,7 @@ jobs:
 
   deploy_pages:
     needs: build_pages
-    if: false  # Disabled for testing
+    if: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
