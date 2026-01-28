@@ -6,6 +6,9 @@ on:
       - "feature/M2O3-204/diff-workflow-improvements"
     paths:
       - "implementation/*/xmi_conceptual_model/*.xml"
+      - ".github/workflows/transform_with_model2owl.yml"
+      - ".github/workflows/diff.yml"
+      - ".github/workflows/diff-config.env"
   workflow_dispatch:
 
 permissions:
@@ -22,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       modules: ${{ steps.detect.outputs.modules }}
+      count: ${{ steps.detect.outputs.count }}
       matrix: ${{ steps.detect.outputs.matrix }}
     steps:
       - uses: actions/checkout@v4
@@ -47,9 +51,11 @@ jobs:
           fi
 
           MODULES_JSON=$(echo "$MODULES" | jq -Rsc 'split("\n") | map(select(. != ""))')
+          COUNT=$(echo "$MODULES_JSON" | jq length)
 
-          echo "Detected modules: $MODULES_JSON"
+          echo "Detected $COUNT module(s): $MODULES_JSON"
           echo "modules=$MODULES_JSON" >> $GITHUB_OUTPUT
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
           echo "matrix={\"module\":$MODULES_JSON}" >> $GITHUB_OUTPUT
 
   # These jobs run in parallel and upload artifacts
@@ -390,7 +396,7 @@ jobs:
 
   # Collect all artifacts and commit to repo
   commit_transform:
-    needs: [report_and_glossary, transform, generate_jsonld_context, generate_respec]
+    needs: [detect_modules, report_and_glossary, transform, generate_jsonld_context, generate_respec]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -444,7 +450,7 @@ jobs:
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit"
           else
-            git commit -m "chore(ci): transform outputs"
+            git commit -m "chore(ci): transform ${{ needs.detect_modules.outputs.count }} module(s) #${{ github.run_number }} [skip ci]"
             git push
           fi
         env:
@@ -465,7 +471,7 @@ jobs:
 
   # Commit diff reports to repo (runs even if some diffs failed)
   commit_diff:
-    needs: diff
+    needs: [detect_modules, diff]
     if: always() && !cancelled()
     runs-on: ubuntu-latest
     steps:
@@ -512,7 +518,7 @@ jobs:
           if [ -z "$(git status --porcelain)" ]; then
             echo "No diff reports to commit"
           else
-            git commit -m "chore(ci): diff reports"
+            git commit -m "chore(ci): diff ${{ needs.detect_modules.outputs.count }} module(s) #${{ github.run_number }} [skip ci]"
             git push
           fi
         env:

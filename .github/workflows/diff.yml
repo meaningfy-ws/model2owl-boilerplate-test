@@ -51,6 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       modules: ${{ steps.resolve.outputs.modules }}
+      count: ${{ steps.resolve.outputs.count }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -67,6 +68,7 @@ jobs:
           if [ "${{ github.event_name }}" == "workflow_call" ]; then
             # Single module from caller
             echo 'modules=["${{ inputs.module }}"]' >> $GITHUB_OUTPUT
+            echo 'count=1' >> $GITHUB_OUTPUT
           else
             # Manual dispatch: input > config > auto-detect
             INPUT="${{ inputs.modules }}"
@@ -83,8 +85,10 @@ jobs:
               MODULES_JSON=$(echo "$INPUT" | jq -Rc 'split(",") | map(gsub("^\\s+|\\s+$";""))')
             fi
 
-            echo "Resolved modules: $MODULES_JSON"
+            COUNT=$(echo "$MODULES_JSON" | jq length)
+            echo "Resolved $COUNT module(s): $MODULES_JSON"
             echo "modules=${MODULES_JSON}" >> $GITHUB_OUTPUT
+            echo "count=$COUNT" >> $GITHUB_OUTPUT
           fi
 
   # Compare old vs new OWL/SHACL and generate diff reports
@@ -316,7 +320,7 @@ jobs:
   # Commit results only when triggered manually (not from workflow_call)
   commit_dispatch:
     if: github.event_name == 'workflow_dispatch'
-    needs: diff
+    needs: [resolve, diff]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -348,7 +352,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "$OUTDIR"
-          git commit -m "chore(ci): add diff reports" || echo "No changes to commit"
+          git commit -m "chore(ci): diff ${{ needs.resolve.outputs.count }} module(s) #${{ github.run_number }} [skip ci]" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
