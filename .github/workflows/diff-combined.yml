@@ -38,6 +38,21 @@ on:
         required: false
         type: string
         default: ''
+      old_ontology_dir:
+        description: 'Root directory for old OWL/SHACL files'
+        required: false
+        type: string
+        default: 'implementation'
+      new_ontology_dir:
+        description: 'Root directory for new OWL/SHACL files'
+        required: false
+        type: string
+        default: 'implementation'
+      output_dir:
+        description: 'Output directory for diff reports'
+        required: false
+        type: string
+        default: 'diff-reports'
 
 env:
   # Default directory for module implementations
@@ -140,18 +155,27 @@ jobs:
           fi
           echo "repo_url=${REPO}" >> $GITHUB_OUTPUT
 
-          # Directory configuration
-          OLD_DIR="${OLD_ONTOLOGY_DIR:-${{ vars.OLD_ONTOLOGY_DIR }}}"
+          # Directory configuration (priority: inputs > config > vars > default)
+          OLD_DIR="${{ inputs.old_ontology_dir }}"
+          if [ -z "$OLD_DIR" ] || [ "$OLD_DIR" == "implementation" ]; then
+            OLD_DIR="${OLD_ONTOLOGY_DIR:-${{ vars.OLD_ONTOLOGY_DIR }}}"
+          fi
           OLD_DIR="${OLD_DIR:-${IMPL_DIR}}"
           echo "old_dir=${OLD_DIR}" >> $GITHUB_OUTPUT
 
-          NEW_DIR="${NEW_ONTOLOGY_DIR:-${{ vars.NEW_ONTOLOGY_DIR }}}"
+          NEW_DIR="${{ inputs.new_ontology_dir }}"
+          if [ -z "$NEW_DIR" ] || [ "$NEW_DIR" == "implementation" ]; then
+            NEW_DIR="${NEW_ONTOLOGY_DIR:-${{ vars.NEW_ONTOLOGY_DIR }}}"
+          fi
           NEW_DIR="${NEW_DIR:-${IMPL_DIR}}"
           echo "new_dir=${NEW_DIR}" >> $GITHUB_OUTPUT
 
-          RDF_DIFF_OUTDIR="${RDF_DIFF_OUTDIR:-${{ vars.RDF_DIFF_OUTDIR }}}"
-          RDF_DIFF_OUTDIR="${RDF_DIFF_OUTDIR:-diff-reports}"
-          echo "outdir=${RDF_DIFF_OUTDIR}" >> $GITHUB_OUTPUT
+          OUTDIR="${{ inputs.output_dir }}"
+          if [ -z "$OUTDIR" ] || [ "$OUTDIR" == "diff-reports" ]; then
+            OUTDIR="${RDF_DIFF_OUTDIR:-${{ vars.RDF_DIFF_OUTDIR }}}"
+          fi
+          OUTDIR="${OUTDIR:-diff-reports}"
+          echo "outdir=${OUTDIR}" >> $GITHUB_OUTPUT
 
           # Derive file paths from module name and directories
           echo "old_ontology=${OLD_DIR}/${MODULE}/owl_ontology/${MODULE}.ttl" >> $GITHUB_OUTPUT
