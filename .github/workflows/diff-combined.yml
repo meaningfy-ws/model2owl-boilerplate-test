@@ -32,7 +32,7 @@ on:
         description: 'Version to compare against (e.g., main, release/5.0.0)'
         required: false
         type: string
-        default: 'main'
+        default: 'develop'
       revision_repo_url:
         description: 'External repository URL (leave empty for same repo)'
         required: false
