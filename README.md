@@ -237,7 +237,7 @@ or passed as workflow inputs. Priority: workflow inputs > config file > reposito
 #### Workflow configuration parameters
 The following list describes available configuration parameters:
 
-- `REVISION_TO_COMPARE_COMMIT_ID` - (Optional) Git revision to compare against (branch, tag or SHA)
+- `REVISION_TO_COMPARE_COMMIT_ID` - (Optional) Git revision to compare against (branch, tag or SHA, default: `develop`)
 - `REVISION_TO_COMPARE_REPO_URL` - (Optional) URL of an external public Git repository for the old version
 - `OLD_ONTOLOGY_DIR` - Root directory for old OWL/SHACL files (default: `implementation`)
 - `NEW_ONTOLOGY_DIR` - Root directory for new OWL/SHACL files (default: `implementation`)

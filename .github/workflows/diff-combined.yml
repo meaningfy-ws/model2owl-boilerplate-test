@@ -142,7 +142,7 @@ jobs:
           if [ -z "$REV" ]; then
             REV="${REVISION_TO_COMPARE_COMMIT_ID-${{ vars.REVISION_TO_COMPARE_COMMIT_ID }}}"
           fi
-          REV="${REV:-main}"
+          REV="${REV:-develop}"
           echo "revision=${REV}" >> $GITHUB_OUTPUT
 
           REPO="${{ inputs.revision_repo_url }}"
