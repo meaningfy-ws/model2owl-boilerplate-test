@@ -226,7 +226,7 @@ one committed in a previous revision or even in a different repository.
 
 The RDF diff workflow is called automatically by the transform workflow after
 generating new OWL/SHACL artefacts. It can also be triggered manually via
-workflow dispatch.
+[workflow dispatch](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow).
 
 Configuration is managed through [diff-config.env](.github/workflows/diff-config.env).
 This file allows you to override the default RDF diff behaviour on push-triggered runs,
@@ -243,6 +243,8 @@ The following list describes available configuration parameters:
 - `NEW_ONTOLOGY_DIR` - Root directory for new OWL/SHACL files (default: `implementation`)
 - `MODULES` - Comma-separated module names to diff (empty = auto-detect)
 - `RDF_DIFF_OUTDIR` - Output directory for generated diff reports (default: `diff-reports`)
+
+Diff reports are stored in `<RDF_DIFF_OUTDIR>/<module>/` with separate subdirectories for each module.
 
 File paths are derived automatically from the module name and directory configuration
 (e.g., `<OLD_ONTOLOGY_DIR>/<module>/owl_ontology/<module>.ttl`). The old version is
