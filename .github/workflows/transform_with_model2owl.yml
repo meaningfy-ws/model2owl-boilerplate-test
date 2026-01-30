@@ -533,7 +533,11 @@ jobs:
           EOF
 
           echo "$MODULES_JSON" | jq -r '.[]' | while read module; do
-            echo "- ${module} → [diff-reports/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/diff-reports/${module})" >> $GITHUB_STEP_SUMMARY
+            if [ -d "diff-reports/${module}" ]; then
+              echo "- ✅ ${module} → [diff-reports/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/diff-reports/${module})" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- ❌ ${module} — diff failed (old files not found)" >> $GITHUB_STEP_SUMMARY
+            fi
           done
 
           cat >> $GITHUB_STEP_SUMMARY << EOF

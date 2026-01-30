@@ -220,12 +220,12 @@ jobs:
             fi
             echo "Using ref: ${REF}"
             git show "${REF}:${OLD_ONTOLOGY}" > old-files/old_ontology.ttl || {
-              echo "Warning: Could not find ${OLD_ONTOLOGY} at ${REF}"
-              touch old-files/old_ontology.ttl
+              echo "::error::Could not find ${OLD_ONTOLOGY} at ${REF}"
+              exit 1
             }
             git show "${REF}:${OLD_SHACL}" > old-files/old_shacl.ttl || {
-              echo "Warning: Could not find ${OLD_SHACL} at ${REF}"
-              touch old-files/old_shacl.ttl
+              echo "::error::Could not find ${OLD_SHACL} at ${REF}"
+              exit 1
             }
           fi
 
@@ -339,7 +339,7 @@ jobs:
 
   # Commit results only when triggered manually (not from workflow_call)
   commit_dispatch:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' && !cancelled()
     needs: [resolve, diff]
     runs-on: ubuntu-latest
     steps:
@@ -382,6 +382,7 @@ jobs:
           MODULES_JSON='${{ needs.resolve.outputs.modules }}'
           COUNT='${{ needs.resolve.outputs.count }}'
           REPO_URL="${{ github.server_url }}/${{ github.repository }}"
+          OUTDIR="${RDF_DIFF_OUTDIR:-diff-reports}"
 
           cat >> $GITHUB_STEP_SUMMARY << EOF
           ## ${{ github.workflow }} - Run #${{ github.run_number }}
@@ -390,7 +391,11 @@ jobs:
           EOF
 
           echo "$MODULES_JSON" | jq -r '.[]' | while read module; do
-            echo "- ${module} → [diff-reports/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/diff-reports/${module})" >> $GITHUB_STEP_SUMMARY
+            if [ -d "${OUTDIR}/${module}" ]; then
+              echo "- ✅ ${module} → [${OUTDIR}/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/${OUTDIR}/${module})" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- ❌ ${module} — old files not found" >> $GITHUB_STEP_SUMMARY
+            fi
           done
 
           cat >> $GITHUB_STEP_SUMMARY << EOF
