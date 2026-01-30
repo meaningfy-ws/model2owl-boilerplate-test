@@ -335,7 +335,7 @@ The message includes the number of modules processed and the workflow run number
 ### Workflow summary
 Each workflow run generates a summary visible in the GitHub Actions run page. The summary
 shows which modules were processed, with links to the generated diff reports. If a module
-fails (e.g., no preexisting files to compare to), it will be marked with ❌ in the summary.
+fails (e.g., no preexisting files to compare to), it will be noted in the summary.
 
 ## ReSpec Documentation Generation
 
