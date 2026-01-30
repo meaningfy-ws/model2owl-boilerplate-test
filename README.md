@@ -332,6 +332,11 @@ chore(ci): diff 2 module(s) #143 [skip ci]
 The message includes the number of modules processed and the workflow run number.
 `[skip ci]` prevents the commit from retriggering the workflow.
 
+### Workflow summary
+Each workflow run generates a summary visible in the GitHub Actions run page. The summary
+shows which modules were processed, with links to the generated diff reports. If a module
+fails (e.g., no preexisting files to compare to), it will be marked with ❌ in the summary.
+
 ## ReSpec Documentation Generation
 
 The workflow also generates **ReSpec documentation** - a comprehensive HTML documentation package that includes your ontology artifacts and examples. This section explains how to customize and work with ReSpec resources.

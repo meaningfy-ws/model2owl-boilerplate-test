@@ -220,11 +220,11 @@ jobs:
             fi
             echo "Using ref: ${REF}"
             git show "${REF}:${OLD_ONTOLOGY}" > old-files/old_ontology.ttl || {
-              echo "::error::Could not find ${OLD_ONTOLOGY} at ${REF}"
+              echo "::error::Comparison with module ${MODULE} failed: No preexisting files to compare to (${OLD_ONTOLOGY} not found at ${REF})"
               exit 1
             }
             git show "${REF}:${OLD_SHACL}" > old-files/old_shacl.ttl || {
-              echo "::error::Could not find ${OLD_SHACL} at ${REF}"
+              echo "::error::Comparison with module ${MODULE} failed: No preexisting files to compare to (${OLD_SHACL} not found at ${REF})"
               exit 1
             }
           fi
@@ -394,7 +394,7 @@ jobs:
             if [ -d "${OUTDIR}/${module}" ]; then
               echo "- ✅ ${module} → [${OUTDIR}/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/${OUTDIR}/${module})" >> $GITHUB_STEP_SUMMARY
             else
-              echo "- ❌ ${module} — old files not found" >> $GITHUB_STEP_SUMMARY
+              echo "- ❌ ${module} — No preexisting files to compare to" >> $GITHUB_STEP_SUMMARY
             fi
           done
 
