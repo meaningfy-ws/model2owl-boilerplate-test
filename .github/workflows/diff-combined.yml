@@ -359,14 +359,18 @@ jobs:
           source "${DIFF_CONFIG}" 2>/dev/null || true
           OUTDIR="${RDF_DIFF_OUTDIR:-diff-reports}"
 
+          # Track which modules had successful diff artifacts
+          SUCCESSFUL_MODULES=""
           mkdir -p "$OUTDIR"
           for diff_dir in artifacts/diff-*/; do
             if [ -d "$diff_dir" ]; then
               module=$(basename "$diff_dir" | sed 's/diff-//')
+              SUCCESSFUL_MODULES="${SUCCESSFUL_MODULES} ${module}"
               mkdir -p "$OUTDIR/$module"
               cp -r "${diff_dir}"* "$OUTDIR/$module/" 2>/dev/null || true
             fi
           done
+          echo "SUCCESSFUL_DIFF_MODULES=${SUCCESSFUL_MODULES}" >> $GITHUB_ENV
           rm -rf artifacts/
 
           git config user.name "github-actions[bot]"
@@ -391,14 +395,14 @@ jobs:
           EOF
 
           echo "$MODULES_JSON" | jq -r '.[]' | while read module; do
-            if [ -d "${OUTDIR}/${module}" ]; then
-              echo "- ✅ ${module} → [${OUTDIR}/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/${OUTDIR}/${module})" >> $GITHUB_STEP_SUMMARY
+            if [[ " ${SUCCESSFUL_DIFF_MODULES} " =~ " ${module} " ]]; then
+              echo "- ${module} → [${OUTDIR}/${module}/](${REPO_URL}/tree/${{ github.ref_name }}/${OUTDIR}/${module})" >> $GITHUB_STEP_SUMMARY
             else
-              echo "- ❌ ${module} — No preexisting files to compare to" >> $GITHUB_STEP_SUMMARY
+              echo "- ${module} — No preexisting files to compare to" >> $GITHUB_STEP_SUMMARY
             fi
           done
 
           cat >> $GITHUB_STEP_SUMMARY << EOF
 
-          **Commit:** [Diff reports](${REPO_URL}/commits/${{ github.ref_name }}) ✓
+          **Commit:** [Diff reports](${REPO_URL}/commits/${{ github.ref_name }})
           EOF
