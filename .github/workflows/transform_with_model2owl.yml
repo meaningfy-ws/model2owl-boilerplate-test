@@ -78,6 +78,7 @@ jobs:
           make get-saxon
           make create-virtual-env
           make get-jinja
+          make get-jq
 
       - name: Generate convention report and glossaries
         run: |
@@ -130,6 +131,12 @@ jobs:
           make merge-xmi FIRST_XMI_TO_BE_MERGED_FILE_PATH=${FIRST_XMI}
 
           NS_XML_FILE_PATH=$(realpath $(find ../implementation -type f -path '*/model2owl-config/namespaces.xml' | head -1))
+
+          # use the config file of the chosen module
+          cp config-proxy.xsl config-proxy.xsl.default
+          MODULE_CONFIG_DIR=$(dirname "$NS_XML_FILE_PATH")
+          sed -i "s|test/ePO-default-config|${MODULE_CONFIG_DIR}|g" config-proxy.xsl
+
           make generate-glossary \
             XMI_INPUT_FILE_PATH=output/combined-xmi/ontologies-combined.xmi \
             OUTPUT_GLOSSARY_PATH=../$OUTPUT_GLOSSARY_PATH \
@@ -138,6 +145,8 @@ jobs:
             XMI_INPUT_FILE_PATH=output/combined-xmi/ontologies-combined.xmi \
             OUTPUT_GLOSSARY_PATH=../$OUTPUT_GLOSSARY_PATH \
             OUTPUT_FOLDER_PATH=$(mktemp -d)
+
+          mv config-proxy.xsl.default config-proxy.xsl
 
       - name: Convert AsciiDoc glossaries to HTML
         run: |
