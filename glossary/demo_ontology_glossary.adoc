@@ -79,54 +79,6 @@
       
     
       
-| epo-not:CANDefence-D81 | 
-      
-    
-      
-| epo-not:CANSocialNotice | 
-      
-    
-      
-| epo-not:CANSocialNotice-D25 | Additional information: Social and other specific services – utilities
-      
-    
-      
-| epo-not:CANSocial-D25 | 
-      
-    
-      
-| epo-not:CANStandardNotice | 
-      
-    
-      
-| epo-not:CANStandard-D24 | 
-      
-    
-      
-| epo-not:CNDefence-D81 | 
-      
-    
-      
-| epo-not:CNSocialNotice | 
-      
-    
-      
-| epo-not:CNSocialNotice-D25 | Additional information: Social and other specific services – utilities
-      
-    
-      
-| epo-not:CNSocial-D25 | 
-      
-    
-      
-| epo-not:CNStandardNotice | 
-      
-    
-      
-| epo-not:CNStandard-D24 | 
-      
-    
-      
 | epo:Candidate | The Role of an Agent that has sought an invitation or has been invited to take part in a restricted Procedure, in a competitive Procedure with negotiation, in a negotiated Procedure without prior publication, in a competitive dialogue or in an innovation partnership.
       
     
@@ -167,27 +119,11 @@
       
     
       
-| epo-not:CompetitionNotice | An announcement of the launch of a Procurement Procedure by a Procuring Entity. WG approval 18/05/2018
-      
-    
-      
-| epo-not:CompletionNotice | An announcement of the end of a Procurement by a Buyer.
-      
-    
-      
-| epo-not:ConcessionAwardNotice-D23 | 
-      
-    
-      
 | epo:ConcessionContract | A Contract between one or more Buyers and one or more Economic Operators giving the right to the Economic Operators to exploit the rights foreseen in the Contract which may include the receipt of Payments.
       
     
       
 | epo:ConcessionEstimate | Approximation concerning the foreseen Concession Contract.
-      
-    
-      
-| epo-not:ConcessionNotice-D23 | 
       
     
       
@@ -215,10 +151,6 @@
       
     
       
-| epo-not:ContractModificationNotice | An announcement of the Modification Of a Contract/Concession during its term by a Procuring Entity.
-      
-    
-      
 | epo:ContractTerm | Conditions and stipulations defining particularities of the Post Award Phase.
       
     
@@ -231,35 +163,7 @@
       
     
       
-| epo-not:DesignContestNotice | 
-      
-    
-      
 | epo:DesignContestRegimeTerm | Conditions and stipulations defining particularities of a Design Contest.
-      
-    
-      
-| epo-not:DesignContestResultNotice | 
-      
-    
-      
-| epo-not:DesignContestResult-D24 | 
-      
-    
-      
-| epo-not:DesignContestResult-D25 | 
-      
-    
-      
-| epo-not:DesignContest-D24 | 
-      
-    
-      
-| epo-not:DesignContest-D25 | 
-      
-    
-      
-| epo-not:DirectAwardPrenotificationNotice | Notice which sets out the Buyer's purchasing intention to award a Contract without prior notification of Competition.
       
     
       
@@ -288,10 +192,6 @@
     
       
 | epo:EAuctionTechnique | A repetitive Technique in which new Prices, revised downwards, and/or new values concerning certain elements of Tenders are bid on-line.
-      
-    
-      
-| epo-not:eFormsNotice | 
       
     
       
@@ -443,18 +343,6 @@
       
     
       
-| epo-not:Modification-D23 | 
-      
-    
-      
-| epo-not:Modification-D24 | 
-      
-    
-      
-| epo-not:Modification-D25 | 
-      
-    
-      
 | epo:MonetaryValue | A number of monetary units specified using a given unit of currency. Additional information: In the pre-award phase of the procurement, all monetary values are considered to exclude VAT based on the Directive 2014/24/EU.
       
     
@@ -476,166 +364,6 @@
     
       
 | epo:NoticeAwardInformation | Information about an Award Notice.
-      
-    
-      
-| epo-not:Notice1 | 
-      
-    
-      
-| epo-not:Notice10 | 
-      
-    
-      
-| epo-not:Notice11 | 
-      
-    
-      
-| epo-not:Notice12 | 
-      
-    
-      
-| epo-not:Notice13 | 
-      
-    
-      
-| epo-not:Notice14 | 
-      
-    
-      
-| epo-not:Notice15 | 
-      
-    
-      
-| epo-not:Notice16 | 
-      
-    
-      
-| epo-not:Notice17 | 
-      
-    
-      
-| epo-not:Notice18 | 
-      
-    
-      
-| epo-not:Notice19 | 
-      
-    
-      
-| epo-not:Notice2 | 
-      
-    
-      
-| epo-not:Notice20 | 
-      
-    
-      
-| epo-not:Notice21 | 
-      
-    
-      
-| epo-not:Notice22 | 
-      
-    
-      
-| epo-not:Notice23 | 
-      
-    
-      
-| epo-not:Notice24 | 
-      
-    
-      
-| epo-not:Notice25 | 
-      
-    
-      
-| epo-not:Notice26 | 
-      
-    
-      
-| epo-not:Notice27 | 
-      
-    
-      
-| epo-not:Notice28 | 
-      
-    
-      
-| epo-not:Notice29 | 
-      
-    
-      
-| epo-not:Notice3 | 
-      
-    
-      
-| epo-not:Notice30 | 
-      
-    
-      
-| epo-not:Notice31 | 
-      
-    
-      
-| epo-not:Notice32 | 
-      
-    
-      
-| epo-not:Notice33 | 
-      
-    
-      
-| epo-not:Notice34 | 
-      
-    
-      
-| epo-not:Notice35 | 
-      
-    
-      
-| epo-not:Notice36 | 
-      
-    
-      
-| epo-not:Notice37 | 
-      
-    
-      
-| epo-not:Notice38 | 
-      
-    
-      
-| epo-not:Notice39 | 
-      
-    
-      
-| epo-not:Notice4 | 
-      
-    
-      
-| epo-not:Notice40 | 
-      
-    
-      
-| epo-not:Notice5 | 
-      
-    
-      
-| epo-not:Notice6 | 
-      
-    
-      
-| epo-not:Notice7 | 
-      
-    
-      
-| epo-not:Notice8 | 
-      
-    
-      
-| epo-not:Notice9 | 
       
     
       
@@ -672,70 +400,6 @@
     
       
 | epo:OriginatorRequest | Document in which the Originator describes his needs.
-      
-    
-      
-| epo-not:PIN-CFCSocialNotice | 
-      
-    
-      
-| epo-not:PIN-CFCSocialNotice-D25 | Additional information: Social and other specific services – utilities
-      
-    
-      
-| epo-not:PIN-CFCSocial-D25 | 
-      
-    
-      
-| epo-not:PIN-CFCStandardNotice | 
-      
-    
-      
-| epo-not:PIN-CFCStandard-D24 | 
-      
-    
-      
-| epo-not:PIN-RTL-D24 | 
-      
-    
-      
-| epo-not:PIN-RTL-D25 | 
-      
-    
-      
-| epo-not:PINDefence-D81 | 
-      
-    
-      
-| epo-not:PINOnlyNotice | PriorInformationNotice
-      
-    
-      
-| epo-not:PINOnly-D24 | 
-      
-    
-      
-| epo-not:PINOnly-D25 | 
-      
-    
-      
-| epo-not:PINProfileNotice | 
-      
-    
-      
-| epo-not:PINProfile-D24 | 
-      
-    
-      
-| epo-not:PINProfile-D25 | 
-      
-    
-      
-| epo-not:PINProfile-D81 | 
-      
-    
-      
-| epo-not:PINTimeLimitNotice | 
       
     
       
@@ -776,14 +440,6 @@
     
       
 | epo:PlannedProcurementPart | A subdivision of a Planned Procurement that may later become one or more Lots or a self-standing Procedure. A Lot or a Procedure can also cover one or more parts of the Planned Procurement.
-      
-    
-      
-| epo-not:PlanningNotice | Notice which sets out the Contracting Authority's purchasing intentions. It is used by Contracting Authorities to provide Suppliers with information about a Procurement Process.
-      
-    
-      
-| epo-not:PreMarketConsultationNotice | 
       
     
       
@@ -863,18 +519,6 @@
       
     
       
-| epo-not:QS-D25 | 
-      
-    
-      
-| epo-not:QSNotice | 
-      
-    
-      
-| epo-not:QSNotice-D25 | Additional information: Social and other specific services – utilities
-      
-    
-      
 | epo:QualificationCriteriaSummary | Overview of the Qualification Criteria.
       
     
@@ -892,10 +536,6 @@
     
       
 | cccev:Requirement | +++External concept defined by <xref scope="external" href=""http://data.europa.eu/m8g/Requirement""><foreign otherprops="#0000ff"><u>http://data.europa.eu/m8g/Requirement</u></foreign></xref> Additional Information: To stay consistent to how identification is realised in the eProcurement ontology, we switch to using `adms:identifier` instead of `dct:identifier` as per CCCEV specification.+++
-      
-    
-      
-| epo-not:ResultNotice | An announcement of the award or non-award of a Contract by a Buyer. (WG approval 27/03/2019)
       
     
       
@@ -955,23 +595,11 @@
       
     
       
-| epo-not:SocialAndOtherSpecificServices-D23 | 
-      
-    
-      
-| epo-not:SocialAndOtherSpecificServices-D24 | public contracts
-      
-    
-      
 | epo:SocialProcurement | Approach whereby Buyers seek to procure by fulfilling social objectives. Additional Information: Socially Responsible Public Procurement (SRPP) - ï¿½SRPPï¿½ means Procurement Operations that take into account one or more of the following social considerations: employment opportunities, decent work, compliance with social and labour rights, social inclusion (including persons with disabilities), equal opportunities, accessibility design for all, taking account of sustainability criteria, including ethical trade issues and wider voluntary compliance with corporate social responsibility (CSR), while observing the principles enshrined in the Treaty for the European Union (TFEU) and the Procurement Directives. See Article 18 and Annex X Directive 2014/24.
       
     
       
 | epo:SpecificationInformation | 
-      
-    
-      
-| epo-not:StandardFormsNotice | 
       
     
       
@@ -983,15 +611,7 @@
       
     
       
-| epo-not:SubcontractNotice | 
-      
-    
-      
 | epo:SubcontractTerm | A concept to describe the main information regarding the share of parts of the Contract to third parties.
-      
-    
-      
-| epo-not:Subcontract-D81 | 
       
     
       
@@ -1075,27 +695,21 @@
       
     
       
-| epo-not:VEAT-D23 | 
-      
-    
-      
-| epo-not:VEAT-D24 | 
-      
-    
-      
-| epo-not:VEAT-D25 | 
-      
-    
-      
-| epo-not:VEAT-D81 | 
-      
-    
-      
-| epo-not:VoluntaryEx-AnteTransparencyNotice | A Notice informing of the intention to award a Contract without prior publication of a Contract Notice. Additional Information: For European Notices above the threshold "A means of advertising the intention to award the Contract without opening it up to formal Competition. A Contracting Authority may decide that a Contract does not require prior publication through a Contract Notice in the O.J.E.U. A reason for this decision may be that the Contract meets the exceptional conditions described in Article 31 of Directive 2004/18/EC. In a recent V.E.A.T notice the reason was listed as “extreme urgency brought about by events unforeseeable by the Contracting Entity and in accordance with the strict conditions stated in the Directive” . "Voluntary Ex-Ante Transparency Notice" (VEAT) where a Contracting Authority deems that a Contract does not require prior publication of a Contract Notice in the European Journal (OJEU). This may apply, for example, if the Contract meets the exceptional conditions justifying direct award of contracts. <b>This definition is still to be worked on.</b>
-      
-    
-      
 | epo:Winner | A Role of an Agent to whom a Lot is awarded.
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
       
     
       
@@ -1622,40 +1236,6 @@ epo:Documentation
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 | epo:ConcessionEstimate
 | epo:hasCalculationMethod| 
   Formula for obtaining values. Additional Information: The possible values are monetary values, ranking scores, criterion weighting.|rdf:PlainLiteral [0..1]
@@ -1748,13 +1328,13 @@ org:Organization
   
   
   
+  
+  
+  
+  
 | epo:ContractLotCompletionInformation
 | epo:hasPaymentValueDiscrepancyJustification| 
   Justification for the actual value being different to the value in the initial Contract.|rdf:PlainLiteral [0..1]
-  
-  
-  
-  
   
   
   
@@ -1920,14 +1500,6 @@ org:Organization
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
 | epo:DirectAwardTerm
 | epo:hasJustification| 
   An explanation about the reasons for using the concept.|rdf:PlainLiteral [0..&#42;]
@@ -2031,6 +1603,8 @@ epo:Fund
 | epo:hasURL| 
   The identifier of a resource. Additional Information For example: 1. The URL of the system from where to access the procurement documents; 2. The URL of the system for the submission of tender documents; 3. The URL of the system from where to download a tool to communicate with the Buyer; 4. The URL of the system used by a Technique to allow Economic Operators to exchange information with the Buyer (e.g. eAuction and DPS Systems) 5. The URL of the system used to exchange information between Buyer and EO for questions and clarifications;|xsd:anyURI [0..1] +
   xsd:anyURI [0..1]
+  
+  
   
   
   
@@ -2372,6 +1946,10 @@ epo:ProcurementElement
   
   
   
+  
+  
+  
+  
 | epo:OpeningTerm
 | epo:hasOpeningURL| 
   The identifier of the address of the Opening of Tenders.|xsd:anyURI [0..1]
@@ -2515,12 +2093,6 @@ epo:ProcurementElement
 | person:Person
 | person:patronymicName| 
   +++External concept defined by <xref scope="external" href=""https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.patronymicname""><foreign otherprops="#0000ff"><u>https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.patronymicname</u></foreign></xref>+++|rdf:PlainLiteral [0..&#42;]
-  
-  
-  
-  
-  
-  
   
   
   
@@ -2825,12 +2397,6 @@ epo:ProcurementElement
 | epo:Quantity
 | epo:hasUnitDescription| 
   A narrative explanation defining the units of items being counted Additional information: This could be for example individual items or pack or two.|rdf:PlainLiteral [0..&#42;]
-  
-  
-  
-  
-  
-  
   
   
   
@@ -3594,6 +3160,44 @@ epo:ProcurementElement
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 |===
 
 == Predicates (object properties) and definitions
@@ -4037,189 +3641,6 @@ epo:EnergyEfficiencyInformation → epo:GreenProcurement [0..1]
 
   
   
-| epo:announcesLot| 
-  |epo-not:CompetitionNotice → epo:Lot [1..&#42;] +
-epo-not:CompetitionNotice → epo:Lot [1..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:Lot [1..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:Lot [1..&#42;] +
-epo-not:PlanningNotice → epo:Lot [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesLotGroup| 
-  |epo-not:CompetitionNotice → epo:LotGroup [0..&#42;] +
-epo-not:CompetitionNotice → epo:LotGroup [0..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:LotGroup [0..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:LotGroup [0..&#42;] +
-epo-not:PlanningNotice → epo:LotGroup [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesProcedure| 
-  |epo-not:CompetitionNotice → epo:Procedure [1] +
-epo-not:CompetitionNotice → epo:Procedure [1] +
-epo-not:DirectAwardPrenotificationNotice → epo:Procedure [1] +
-epo-not:DirectAwardPrenotificationNotice → epo:Procedure [1] +
-epo-not:PlanningNotice → epo:Procedure [0..1]
-
-  
-
-  
-  
-| epo:announcesRole| 
-  |epo-not:CompetitionNotice → epo:AgentInRole [1..&#42;] +
-epo-not:CompetitionNotice → epo:AgentInRole [1..&#42;] +
-epo-not:CompletionNotice → epo:AgentInRole [0..&#42;] +
-epo-not:CompletionNotice → epo:AgentInRole [0..&#42;] +
-epo-not:ContractModificationNotice → epo:AgentInRole [0..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:AgentInRole [1..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:AgentInRole [1..&#42;] +
-epo-not:PlanningNotice → epo:AgentInRole [1..&#42;] +
-epo-not:PlanningNotice → epo:AgentInRole [1..&#42;] +
-epo-not:ResultNotice → epo:AgentInRole [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesCompletionOfContract| 
-  |epo-not:CompletionNotice → epo:Contract [1] +
-epo-not:CompletionNotice → epo:Contract [1]
-
-  
-
-  
-  
-| epo:announcesReviewObject| 
-  |epo-not:CompletionNotice → epo:ReviewObject [1..&#42;]
-
-  
-
-  
-  
-| epo:concernsLot| 
-  Relates to Lot.|epo-not:CompletionNotice → epo:Lot [1..&#42;] +
-epo:ContractLotCompletionInformation → epo:Lot [0..1] +
-epo-not:ContractModificationNotice → epo:Lot [1..&#42;] +
-cccev:InformationRequirement → epo:Lot [0..&#42;] +
-epo:LotAwardOutcome → epo:Lot [1] +
-epo:ProcurementProcessInformation → epo:Lot [0..1] +
-epo-not:ResultNotice → epo:Lot [1..&#42;] +
-epo-qua:EvidenceRequest → epo:Lot [1..&#42;] +
-epo-qua:EvidenceSubmission → epo:Lot [1..&#42;]
-
-  
-
-  
-  
-| epo:concernsLotGroup| 
-  |epo-not:CompletionNotice → epo:LotGroup [0..&#42;] +
-epo:ContractLotCompletionInformation → epo:LotGroup [0..1] +
-epo-not:ContractModificationNotice → epo:LotGroup [0..&#42;] +
-cccev:InformationRequirement → epo:LotGroup [0..&#42;] +
-epo-not:ResultNotice → epo:LotGroup [0..&#42;]
-
-  
-
-  
-  
-| epo:concernsProcedure| 
-  Relates to Procedure.|epo-not:CompletionNotice → epo:Procedure [1] +
-epo-not:ContractModificationNotice → epo:Procedure [1] +
-epo:ExpressionOfInterest → epo:Procedure [1] +
-cccev:InformationRequirement → epo:Procedure [0..&#42;] +
-epo:ProcurementProcessInformation → epo:Procedure [0..1] +
-epo-not:ResultNotice → epo:Procedure [1] +
-epo-qua:EvidenceRequest → epo:Procedure [1] +
-epo-qua:EvidenceSubmission → epo:Procedure [1] +
-epo-awa:AwardDecisionNotification → epo:Procedure [1] +
-epo-acc:ESPDRequest → epo:Procedure [1]
-
-  
-
-  
-  
-| epo:refersToAwardDecision| 
-  |epo-not:CompletionNotice → epo:AwardDecision [0..&#42;] +
-epo-not:CompletionNotice → epo:AwardDecision [0..&#42;] +
-epo-not:ContractModificationNotice → epo:AwardDecision [0..&#42;] +
-epo-not:ContractModificationNotice → epo:AwardDecision [0..&#42;]
-
-  
-
-  
-  
-| epo:refersToLot| 
-  |epo-not:CompletionNotice → epo:Lot [1..&#42;] +
-epo-not:ContractModificationNotice → epo:Lot [1..&#42;] +
-epo:Notice → epo:Lot [0..&#42;] +
-epo-not:ResultNotice → epo:Lot [1..&#42;]
-
-  
-
-  
-  
-| epo:refersToLotGroup| 
-  |epo-not:CompletionNotice → epo:LotGroup [0..&#42;] +
-epo-not:ContractModificationNotice → epo:LotGroup [0..&#42;] +
-epo-not:ResultNotice → epo:LotGroup [0..&#42;]
-
-  
-
-  
-  
-| epo:refersToLotGroupAwardInformation| 
-  |epo-not:CompletionNotice → epo:LotGroupAwardInformation [0..&#42;] +
-epo-not:CompletionNotice → epo:LotGroupAwardInformation [0..&#42;] +
-epo-not:ContractModificationNotice → epo:LotGroupAwardInformation [0..&#42;] +
-epo-not:ContractModificationNotice → epo:LotGroupAwardInformation [0..&#42;]
-
-  
-
-  
-  
-| epo:refersToNoticeAwardInformation| 
-  |epo-not:CompletionNotice → epo:NoticeAwardInformation [0..1] +
-epo-not:CompletionNotice → epo:NoticeAwardInformation [0..1] +
-epo-not:ContractModificationNotice → epo:NoticeAwardInformation [0..1] +
-epo-not:ContractModificationNotice → epo:NoticeAwardInformation [0..1]
-
-  
-
-  
-  
-| epo:refersToProcedure| 
-  |epo-not:CompletionNotice → epo:Procedure [1] +
-epo-not:ContractModificationNotice → epo:Procedure [1] +
-epo:Notice → epo:Procedure [0..1] +
-epo-not:ResultNotice → epo:Procedure [1]
-
-  
-
-  
-  
-| epo:refersToReviewRequest| 
-  |epo-not:CompletionNotice → epo:ReviewRequest [0..&#42;]
-
-  
-
-  
-  
-| epo:refersToRole| 
-  |epo-not:CompletionNotice → epo:AgentInRole [0..&#42;] +
-epo-not:CompletionNotice → epo:AgentInRole [0..&#42;] +
-epo-not:ContractModificationNotice → epo:AgentInRole [0..&#42;] +
-epo-not:PreMarketConsultationNotice → epo:AgentInRole [0..&#42;] +
-epo-not:ResultNotice → epo:AgentInRole [1..&#42;]
-
-  
-
-  
-  
 | epo:resultsFromLotAwardOutcome| 
   Relation to indicate that a given type of Contract is a consequence of a given LotAwardOutcome.|epo:ConcessionContract → epo:LotAwardOutcome [0..&#42;] +
 epo:DirectContract → epo:LotAwardOutcome [0..&#42;] +
@@ -4398,6 +3819,32 @@ epo:ProcurementElement → epo:Term [0..&#42;]
 
   
   
+| epo:concernsLot| 
+  Relates to Lot.|epo:ContractLotCompletionInformation → epo:Lot [0..1] +
+cccev:InformationRequirement → epo:Lot [0..&#42;] +
+epo:LotAwardOutcome → epo:Lot [1] +
+epo:ProcurementProcessInformation → epo:Lot [0..1] +
+epo-not:CompletionNotice → epo:Lot [1..&#42;] +
+epo-not:ContractModificationNotice → epo:Lot [1..&#42;] +
+epo-not:ResultNotice → epo:Lot [1..&#42;] +
+epo-qua:EvidenceRequest → epo:Lot [1..&#42;] +
+epo-qua:EvidenceSubmission → epo:Lot [1..&#42;]
+
+  
+
+  
+  
+| epo:concernsLotGroup| 
+  |epo:ContractLotCompletionInformation → epo:LotGroup [0..1] +
+cccev:InformationRequirement → epo:LotGroup [0..&#42;] +
+epo-not:CompletionNotice → epo:LotGroup [0..&#42;] +
+epo-not:ContractModificationNotice → epo:LotGroup [0..&#42;] +
+epo-not:ResultNotice → epo:LotGroup [0..&#42;]
+
+  
+
+  
+  
   
 
   
@@ -4420,21 +3867,6 @@ epo:ProcurementElement → epo:Term [0..&#42;]
   |epo:ContractLotCompletionInformation → epo:Contract [1] +
 epo-inv:Invoice → epo:Contract [0..1] +
 epo-req:RequestForOffer → epo:Contract [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesContractAmendment| 
-  |epo-not:ContractModificationNotice → epo-con:ContractAmendment [1]
-
-  
-
-  
-  
-| epo:refersToContractToBeModified| 
-  |epo-not:ContractModificationNotice → epo:Contract [1] +
-epo-not:ContractModificationNotice → epo:Contract [1]
 
   
 
@@ -4636,46 +4068,6 @@ org:Organization → epo:Subcontractor [0..&#42;]
 
   
   
-  
-
-  
-  
-| epo:announcesAwardDecision| 
-  |epo-not:DirectAwardPrenotificationNotice → epo:AwardDecision [0..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:AwardDecision [0..&#42;] +
-epo-not:ResultNotice → epo:AwardDecision [0..&#42;] +
-epo-not:ResultNotice → epo:AwardDecision [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesContract| 
-  |epo-not:DirectAwardPrenotificationNotice → epo:Contract [0..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:Contract [0..&#42;] +
-epo-not:ResultNotice → epo:Contract [0..&#42;] +
-epo-not:ResultNotice → epo:Contract [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesLotGroupAwardInformation| 
-  |epo-not:DirectAwardPrenotificationNotice → epo:LotGroupAwardInformation [0..&#42;] +
-epo-not:DirectAwardPrenotificationNotice → epo:LotGroupAwardInformation [0..&#42;] +
-epo-not:ResultNotice → epo:LotGroupAwardInformation [0..&#42;] +
-epo-not:ResultNotice → epo:LotGroupAwardInformation [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesNoticeAwardInformation| 
-  |epo-not:DirectAwardPrenotificationNotice → epo:NoticeAwardInformation [0..1] +
-epo-not:DirectAwardPrenotificationNotice → epo:NoticeAwardInformation [0..1] +
-epo-not:ResultNotice → epo:NoticeAwardInformation [0..1] +
-epo-not:ResultNotice → epo:NoticeAwardInformation [0..1]
-
   
 
   
@@ -4936,6 +4328,22 @@ epo-cat:Catalogue → time:Interval [0..1]
   
 | epo:hasExclusionGroundType| 
   |epo:ExclusionGround → at-voc:exclusion-ground [0..1]
+
+  
+
+  
+  
+| epo:concernsProcedure| 
+  Relates to Procedure.|epo:ExpressionOfInterest → epo:Procedure [1] +
+cccev:InformationRequirement → epo:Procedure [0..&#42;] +
+epo:ProcurementProcessInformation → epo:Procedure [0..1] +
+epo-not:CompletionNotice → epo:Procedure [1] +
+epo-not:ContractModificationNotice → epo:Procedure [1] +
+epo-not:ResultNotice → epo:Procedure [1] +
+epo-qua:EvidenceRequest → epo:Procedure [1] +
+epo-qua:EvidenceSubmission → epo:Procedure [1] +
+epo-awa:AwardDecisionNotification → epo:Procedure [1] +
+epo-acc:ESPDRequest → epo:Procedure [1]
 
   
 
@@ -5347,6 +4755,13 @@ epo-acc:ESPDRequest → epo:ProcurementCriterion [1..&#42;]
 
   
   
+| epo:refersToLot| 
+  |epo:Notice → epo:Lot [0..&#42;]
+
+  
+
+  
+  
 | epo:refersToNotice| 
   |epo:Notice → epo:Notice [0..1]
 
@@ -5354,17 +4769,22 @@ epo-acc:ESPDRequest → epo:ProcurementCriterion [1..&#42;]
 
   
   
+| epo:refersToProcedure| 
+  |epo:Notice → epo:Procedure [0..1]
+
+  
+
+  
+  
 | epo:describesDirectAwardPrenotificationNotice| 
-  |epo:NoticeAwardInformation → epo-not:DirectAwardPrenotificationNotice [0..1] +
-epo:NoticeAwardInformation → epo-not:DirectAwardPrenotificationNotice [0..1]
+  |epo:NoticeAwardInformation → epo-not:DirectAwardPrenotificationNotice [0..1]
 
   
 
   
   
 | epo:describesResultNotice| 
-  |epo:NoticeAwardInformation → epo-not:ResultNotice [0..1] +
-epo:NoticeAwardInformation → epo-not:ResultNotice [0..1]
+  |epo:NoticeAwardInformation → epo-not:ResultNotice [0..1]
 
   
 
@@ -5643,28 +5063,6 @@ epo:ParticipationConditionsSummary → at-voc:reserved-procurement [0..&#42;]
   
 | epo:hasPlannedPeriod| 
   |epo:PlannedProcurementPart → time:Interval [0..1]
-
-  
-
-  
-  
-| epo:announcesPlannedProcurement| 
-  |epo-not:PlanningNotice → epo:PlannedProcurement [0..1]
-
-  
-
-  
-  
-| epo:announcesPlannedProcurementPart| 
-  |epo-not:PlanningNotice → epo:PlannedProcurementPart [0..&#42;] +
-epo-not:PlanningNotice → epo:PlannedProcurementPart [0..&#42;]
-
-  
-
-  
-  
-| epo:preparesForPotentialProcurementObject| 
-  |epo-not:PreMarketConsultationNotice → epo:ProcurementObject [0..&#42;]
 
   
 
@@ -6053,27 +5451,6 @@ epo-eva:TenderClarificationRequest → cccev:InformationRequirement [1..&#42;]
   
 | cccev:isDerivedFrom| 
   +++External concept defined by <xref scope="external" href=""http://data.europa.eu/m8g/isDerivedFrom""><foreign otherprops="#0000ff"><u>http://data.europa.eu/m8g/isDerivedFrom</u></foreign></xref> Additional Information: The relation between a parent Requirement and a sub-Requirement can be complex. Therefore, qualified relations (see hasQualifiedRelation) can be used to represent this relationship on its own and qualify it with additional information such as a date, a place. This is left to implementers. In the case where the purpose is to link the two Requirements without additional information, the simple relationship as proposed here can be directly used.+++|cccev:Requirement → eli:LegalResource [0..&#42;]
-
-  
-
-  
-  
-| epo:announcesReviewRequest| 
-  |epo-not:ResultNotice → epo:ReviewRequest [0..&#42;]
-
-  
-
-  
-  
-| epo-not:announcesRole| 
-  |epo-not:ResultNotice → epo:AgentInRole [0..&#42;]
-
-  
-
-  
-  
-| epo-not:refersToRole| 
-  |epo-not:ResultNotice → epo:AgentInRole [1..&#42;]
 
   
 
@@ -6770,6 +6147,58 @@ epo-con:Deliverable → epo:MonetaryValue [0..1]
 
   
   
+| epo:announcesLot| 
+  |epo-not:PlanningNotice → epo:Lot [0..&#42;] +
+epo-not:DirectAwardPrenotificationNotice → epo:Lot [1..&#42;] +
+epo-not:CompetitionNotice → epo:Lot [1..&#42;]
+
+  
+
+  
+  
+| epo:announcesLotGroup| 
+  |epo-not:PlanningNotice → epo:LotGroup [0..&#42;] +
+epo-not:DirectAwardPrenotificationNotice → epo:LotGroup [0..&#42;] +
+epo-not:CompetitionNotice → epo:LotGroup [0..&#42;]
+
+  
+
+  
+  
+| epo:announcesPlannedProcurement| 
+  |epo-not:PlanningNotice → epo:PlannedProcurement [0..1]
+
+  
+
+  
+  
+| epo:announcesPlannedProcurementPart| 
+  |epo-not:PlanningNotice → epo:PlannedProcurementPart [0..&#42;]
+
+  
+
+  
+  
+| epo:announcesProcedure| 
+  |epo-not:PlanningNotice → epo:Procedure [0..1] +
+epo-not:DirectAwardPrenotificationNotice → epo:Procedure [1] +
+epo-not:CompetitionNotice → epo:Procedure [1]
+
+  
+
+  
+  
+| epo:announcesRole| 
+  |epo-not:PlanningNotice → epo:AgentInRole [1..&#42;] +
+epo-not:CompletionNotice → epo:AgentInRole [0..&#42;] +
+epo-not:DirectAwardPrenotificationNotice → epo:AgentInRole [1..&#42;] +
+epo-not:CompetitionNotice → epo:AgentInRole [1..&#42;] +
+epo-not:ResultNotice → epo:AgentInRole [0..&#42;]
+
+  
+
+  
+  
 | epo-ord:hasAmountDueForPayment| 
   |epo-ord:Order → epo:MonetaryValue [1] +
 epo-inv:Invoice → epo:MonetaryValue [1]
@@ -6894,8 +6323,95 @@ epo-pay:RemittanceAdvice → epo:Buyer [1]
 
   
   
+| epo:preparesForPotentialProcurementObject| 
+  |epo-not:PreMarketConsultationNotice → epo:ProcurementObject [0..&#42;]
+
+  
+
+  
+  
+| epo:refersToRole| 
+  |epo-not:PreMarketConsultationNotice → epo:AgentInRole [0..&#42;] +
+epo-not:CompletionNotice → epo:AgentInRole [0..&#42;] +
+epo-not:ContractModificationNotice → epo:AgentInRole [0..&#42;] +
+epo-not:ResultNotice → epo:AgentInRole [1..&#42;]
+
+  
+
+  
+  
 | epo-qua:providesDecisionFor| 
   |epo-qua:QualificationDecisionInformation → epo:Lot [1]
+
+  
+
+  
+  
+| epo:announcesCompletionOfContract| 
+  |epo-not:CompletionNotice → epo:Contract [1]
+
+  
+
+  
+  
+| epo:refersToAwardDecision| 
+  |epo-not:CompletionNotice → epo:AwardDecision [0..&#42;] +
+epo-not:ContractModificationNotice → epo:AwardDecision [0..&#42;]
+
+  
+
+  
+  
+| epo:refersToLotGroupAwardInformation| 
+  |epo-not:CompletionNotice → epo:LotGroupAwardInformation [0..&#42;] +
+epo-not:ContractModificationNotice → epo:LotGroupAwardInformation [0..&#42;]
+
+  
+
+  
+  
+| epo:refersToNoticeAwardInformation| 
+  |epo-not:CompletionNotice → epo:NoticeAwardInformation [0..1] +
+epo-not:ContractModificationNotice → epo:NoticeAwardInformation [0..1]
+
+  
+
+  
+  
+| epo:refersToReviewRequest| 
+  |epo-not:CompletionNotice → epo:ReviewRequest [0..&#42;]
+
+  
+
+  
+  
+| epo:announcesAwardDecision| 
+  |epo-not:DirectAwardPrenotificationNotice → epo:AwardDecision [0..&#42;] +
+epo-not:ResultNotice → epo:AwardDecision [0..&#42;]
+
+  
+
+  
+  
+| epo:announcesContract| 
+  |epo-not:DirectAwardPrenotificationNotice → epo:Contract [0..&#42;] +
+epo-not:ResultNotice → epo:Contract [0..&#42;]
+
+  
+
+  
+  
+| epo:announcesLotGroupAwardInformation| 
+  |epo-not:DirectAwardPrenotificationNotice → epo:LotGroupAwardInformation [0..&#42;] +
+epo-not:ResultNotice → epo:LotGroupAwardInformation [0..&#42;]
+
+  
+
+  
+  
+| epo:announcesNoticeAwardInformation| 
+  |epo-not:DirectAwardPrenotificationNotice → epo:NoticeAwardInformation [0..1] +
+epo-not:ResultNotice → epo:NoticeAwardInformation [0..1]
 
   
 
@@ -6917,6 +6433,20 @@ epo-pay:RemittanceAdvice → epo:Buyer [1]
   
 | epo:isAssignedForEvaluationOf| 
   |epo-eva:EvaluationBoard → epo:Lot [0..&#42;]
+
+  
+
+  
+  
+| epo:refersToContractToBeModified| 
+  |epo-not:ContractModificationNotice → epo:Contract [1]
+
+  
+
+  
+  
+| epo:announcesReviewRequest| 
+  |epo-not:ResultNotice → epo:ReviewRequest [0..&#42;]
 
   
 
